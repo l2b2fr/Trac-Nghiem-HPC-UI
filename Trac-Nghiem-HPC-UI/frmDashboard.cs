@@ -27,6 +27,7 @@ namespace Trac_Nghiem_HPC_UI
         {
             this.FormBorderStyle = FormBorderStyle.None;
             this.WindowState = FormWindowState.Maximized;
+            this.TopMost = true;
         }
 
         private void actrThoat_Click(object sender, EventArgs e)

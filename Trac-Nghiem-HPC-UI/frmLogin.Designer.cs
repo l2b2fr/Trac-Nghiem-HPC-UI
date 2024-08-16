@@ -31,25 +31,28 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.directXFormContainerControl1 = new DevExpress.XtraEditors.DirectXFormContainerControl();
-            this.ipMatKhau = new DevExpress.XtraEditors.TextEdit();
             this.btnDangNhap = new DevExpress.XtraEditors.SimpleButton();
             this.btnThoat = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.ipMaSinhVien = new DevExpress.XtraEditors.TextEdit();
             this.imageCollectionFrmLogin = new DevExpress.Utils.ImageCollection(this.components);
             this.htmlTemplateCollectionFrmLogin = new DevExpress.Utils.Html.HtmlTemplateCollection();
             this.htmlMesage = new DevExpress.Utils.Html.HtmlTemplate();
             this.alertControlSucces = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
+            this.checkEditHienMatKhau = new DevExpress.XtraEditors.CheckEdit();
+            this.ipMatKhau = new DevExpress.XtraEditors.TextEdit();
+            this.ipMaSinhVien = new DevExpress.XtraEditors.TextEdit();
             this.directXFormContainerControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imageCollectionFrmLogin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEditHienMatKhau.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ipMatKhau.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ipMaSinhVien.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imageCollectionFrmLogin)).BeginInit();
             this.SuspendLayout();
             // 
             // directXFormContainerControl1
             // 
+            this.directXFormContainerControl1.Controls.Add(this.checkEditHienMatKhau);
             this.directXFormContainerControl1.Controls.Add(this.ipMatKhau);
             this.directXFormContainerControl1.Controls.Add(this.btnDangNhap);
             this.directXFormContainerControl1.Controls.Add(this.btnThoat);
@@ -61,22 +64,6 @@
             this.directXFormContainerControl1.Name = "directXFormContainerControl1";
             this.directXFormContainerControl1.Size = new System.Drawing.Size(1000, 504);
             this.directXFormContainerControl1.TabIndex = 0;
-            // 
-            // ipMatKhau
-            // 
-            this.ipMatKhau.AllowHtmlTextInToolTip = DevExpress.Utils.DefaultBoolean.True;
-            this.ipMatKhau.Location = new System.Drawing.Point(98, 283);
-            this.ipMatKhau.Name = "ipMatKhau";
-            this.ipMatKhau.Properties.AdvancedModeOptions.AllowCaretAnimation = DevExpress.Utils.DefaultBoolean.True;
-            this.ipMatKhau.Properties.AdvancedModeOptions.Label = "Nhập mật khẩu của bạn";
-            this.ipMatKhau.Properties.AdvancedModeOptions.LabelAppearance.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ipMatKhau.Properties.AdvancedModeOptions.LabelAppearance.Options.UseFont = true;
-            this.ipMatKhau.Properties.AdvancedModeOptions.SelectionColor = System.Drawing.Color.White;
-            this.ipMatKhau.Properties.Appearance.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ipMatKhau.Properties.Appearance.Options.UseFont = true;
-            this.ipMatKhau.Properties.UseAdvancedMode = DevExpress.Utils.DefaultBoolean.True;
-            this.ipMatKhau.Size = new System.Drawing.Size(492, 46);
-            this.ipMatKhau.TabIndex = 9;
             // 
             // btnDangNhap
             // 
@@ -140,22 +127,6 @@
             this.labelControl1.TabIndex = 2;
             this.labelControl1.Text = "PHẦN MỀM THI TRẮC NGHIỆM";
             // 
-            // ipMaSinhVien
-            // 
-            this.ipMaSinhVien.AllowHtmlTextInToolTip = DevExpress.Utils.DefaultBoolean.True;
-            this.ipMaSinhVien.Location = new System.Drawing.Point(98, 179);
-            this.ipMaSinhVien.Name = "ipMaSinhVien";
-            this.ipMaSinhVien.Properties.AdvancedModeOptions.AllowCaretAnimation = DevExpress.Utils.DefaultBoolean.True;
-            this.ipMaSinhVien.Properties.AdvancedModeOptions.Label = "Nhập mã sinh viên của bạn";
-            this.ipMaSinhVien.Properties.AdvancedModeOptions.LabelAppearance.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ipMaSinhVien.Properties.AdvancedModeOptions.LabelAppearance.Options.UseFont = true;
-            this.ipMaSinhVien.Properties.AdvancedModeOptions.SelectionColor = System.Drawing.Color.White;
-            this.ipMaSinhVien.Properties.Appearance.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ipMaSinhVien.Properties.Appearance.Options.UseFont = true;
-            this.ipMaSinhVien.Properties.UseAdvancedMode = DevExpress.Utils.DefaultBoolean.True;
-            this.ipMaSinhVien.Size = new System.Drawing.Size(492, 46);
-            this.ipMaSinhVien.TabIndex = 0;
-            // 
             // imageCollectionFrmLogin
             // 
             this.imageCollectionFrmLogin.ImageSize = new System.Drawing.Size(16, 16);
@@ -183,6 +154,52 @@
             this.alertControlSucces.HtmlTemplate.Template = resources.GetString("alertControlSucces.HtmlTemplate.Template");
             this.alertControlSucces.HtmlElementMouseClick += new DevExpress.XtraBars.Alerter.AlertHtmlElementMouseClickEventHandler(this.alertControlSucces_HtmlElementMouseClick);
             // 
+            // checkEditHienMatKhau
+            // 
+            this.checkEditHienMatKhau.Location = new System.Drawing.Point(487, 258);
+            this.checkEditHienMatKhau.Name = "checkEditHienMatKhau";
+            this.checkEditHienMatKhau.Properties.Appearance.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkEditHienMatKhau.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(88)))), ((int)(((byte)(163)))));
+            this.checkEditHienMatKhau.Properties.Appearance.Options.UseFont = true;
+            this.checkEditHienMatKhau.Properties.Appearance.Options.UseForeColor = true;
+            this.checkEditHienMatKhau.Properties.Caption = "Hiện mật khẩu";
+            this.checkEditHienMatKhau.Size = new System.Drawing.Size(103, 19);
+            this.checkEditHienMatKhau.TabIndex = 10;
+            this.checkEditHienMatKhau.CheckedChanged += new System.EventHandler(this.checkEditHienMatKhau_CheckedChanged);
+            // 
+            // ipMatKhau
+            // 
+            this.ipMatKhau.AllowHtmlTextInToolTip = DevExpress.Utils.DefaultBoolean.True;
+            this.ipMatKhau.Location = new System.Drawing.Point(98, 283);
+            this.ipMatKhau.Name = "ipMatKhau";
+            this.ipMatKhau.Properties.AdvancedModeOptions.AllowCaretAnimation = DevExpress.Utils.DefaultBoolean.True;
+            this.ipMatKhau.Properties.AdvancedModeOptions.Label = "Nhập mật khẩu của bạn";
+            this.ipMatKhau.Properties.AdvancedModeOptions.LabelAppearance.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ipMatKhau.Properties.AdvancedModeOptions.LabelAppearance.Options.UseFont = true;
+            this.ipMatKhau.Properties.AdvancedModeOptions.SelectionColor = System.Drawing.Color.White;
+            this.ipMatKhau.Properties.Appearance.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ipMatKhau.Properties.Appearance.Options.UseFont = true;
+            this.ipMatKhau.Properties.PasswordChar = '*';
+            this.ipMatKhau.Properties.UseAdvancedMode = DevExpress.Utils.DefaultBoolean.True;
+            this.ipMatKhau.Size = new System.Drawing.Size(492, 46);
+            this.ipMatKhau.TabIndex = 9;
+            // 
+            // ipMaSinhVien
+            // 
+            this.ipMaSinhVien.AllowHtmlTextInToolTip = DevExpress.Utils.DefaultBoolean.True;
+            this.ipMaSinhVien.Location = new System.Drawing.Point(98, 179);
+            this.ipMaSinhVien.Name = "ipMaSinhVien";
+            this.ipMaSinhVien.Properties.AdvancedModeOptions.AllowCaretAnimation = DevExpress.Utils.DefaultBoolean.True;
+            this.ipMaSinhVien.Properties.AdvancedModeOptions.Label = "Nhập mã sinh viên của bạn";
+            this.ipMaSinhVien.Properties.AdvancedModeOptions.LabelAppearance.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ipMaSinhVien.Properties.AdvancedModeOptions.LabelAppearance.Options.UseFont = true;
+            this.ipMaSinhVien.Properties.AdvancedModeOptions.SelectionColor = System.Drawing.Color.White;
+            this.ipMaSinhVien.Properties.Appearance.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ipMaSinhVien.Properties.Appearance.Options.UseFont = true;
+            this.ipMaSinhVien.Properties.UseAdvancedMode = DevExpress.Utils.DefaultBoolean.True;
+            this.ipMaSinhVien.Size = new System.Drawing.Size(492, 46);
+            this.ipMaSinhVien.TabIndex = 0;
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -202,9 +219,10 @@
             this.Load += new System.EventHandler(this.frmLogin_Load);
             this.directXFormContainerControl1.ResumeLayout(false);
             this.directXFormContainerControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imageCollectionFrmLogin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEditHienMatKhau.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ipMatKhau.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ipMaSinhVien.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imageCollectionFrmLogin)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -223,5 +241,6 @@
         private DevExpress.Utils.Html.HtmlTemplate htmlMesage;
         private DevExpress.XtraEditors.TextEdit ipMatKhau;
         private DevExpress.XtraBars.Alerter.AlertControl alertControlSucces;
+        private DevExpress.XtraEditors.CheckEdit checkEditHienMatKhau;
     }
 }

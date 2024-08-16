@@ -55,6 +55,20 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="mscorlib" />
+    <Reference Include="DevExpress.Utils.v23.1" />
+    <Reference Include="DevExpress.XtraEditors.v23.1" />
+    <Reference Include="DevExpress.XtraGrid.v23.1" />
+    <Reference Include="DevExpress.Data.Desktop.v23.1" />
+    <Reference Include="DevExpress.XtraLayout.v23.1" />
+    <Reference Include="DevExpress.XtraBars.v23.1" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="DevExpress.XtraTreeList.v23.1" />
+    <Reference Include="EntityFramework" />
+    <Reference Include="DevExpress.Data.v23.1" />
+    <Reference Include="DevExpress.Drawing.v23.1" />
+    <Reference Include="DevExpress.Mvvm.v23.1" />
+    <Reference Include="DevExpress.Printing.v23.1.Core" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="frmDashboard.cs">
@@ -106,6 +120,22 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Editors\ToggleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Assets\Toolbox\Root.cs" />
+    <EmbeddedResource Include="Assets\Toolbox\ToggleButton.bmp" />
+    <Compile Include="Editors\Base\ButtonBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Editors\Base\ButtonImageOptionsBase.cs" />
+    <Compile Include="Editors\Base\CheckButtonBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Base\CheckItemBase.cs" />
+    <EmbeddedResource Include="Assets\HTML\ToggleButton.html" />
+    <EmbeddedResource Include="Assets\CSS\ToggleButton.css" />
+    <Compile Include="Utilities\HtmlCssAsset.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -123,9 +153,6 @@
     <None Include="Resources\enter.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\f814f9ee86f9897f7482c28cf25322e0.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\banner-hpc1.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -133,6 +160,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\banner-hpc3-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f814f9ee86f9897f7482c28cf25322e0.jpg.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

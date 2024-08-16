@@ -31,15 +31,15 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLoading));
             this.directXFormContainerControl1 = new DevExpress.XtraEditors.DirectXFormContainerControl();
-            this.imageSlider1 = new DevExpress.XtraEditors.Controls.ImageSlider();
-            this.progressBarControl1 = new DevExpress.XtraEditors.ProgressBarControl();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.alertControlSucces = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
             this.imageCollectionFrmLogin = new DevExpress.Utils.ImageCollection(this.components);
+            this.progressBarControl1 = new DevExpress.XtraEditors.ProgressBarControl();
+            this.imageSlider1 = new DevExpress.XtraEditors.Controls.ImageSlider();
             this.directXFormContainerControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imageSlider1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.progressBarControl1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollectionFrmLogin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.progressBarControl1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imageSlider1)).BeginInit();
             this.SuspendLayout();
             // 
             // directXFormContainerControl1
@@ -50,34 +50,6 @@
             this.directXFormContainerControl1.Name = "directXFormContainerControl1";
             this.directXFormContainerControl1.Size = new System.Drawing.Size(697, 321);
             this.directXFormContainerControl1.TabIndex = 0;
-            // 
-            // imageSlider1
-            // 
-            this.imageSlider1.AllowLooping = true;
-            this.imageSlider1.AnimationTime = 1000;
-            this.imageSlider1.AutoSlide = DevExpress.XtraEditors.Controls.AutoSlide.Forward;
-            this.imageSlider1.AutoSlideInterval = 1000;
-            this.imageSlider1.CurrentImageIndex = 0;
-            this.imageSlider1.Images.Add(((System.Drawing.Image)(resources.GetObject("imageSlider1.Images"))));
-            this.imageSlider1.Images.Add(((System.Drawing.Image)(resources.GetObject("imageSlider1.Images1"))));
-            this.imageSlider1.Images.Add(((System.Drawing.Image)(resources.GetObject("imageSlider1.Images2"))));
-            this.imageSlider1.Location = new System.Drawing.Point(0, 0);
-            this.imageSlider1.Name = "imageSlider1";
-            this.imageSlider1.Size = new System.Drawing.Size(697, 299);
-            this.imageSlider1.TabIndex = 1;
-            this.imageSlider1.Text = "imageSlider1";
-            // 
-            // progressBarControl1
-            // 
-            this.progressBarControl1.Location = new System.Drawing.Point(0, 296);
-            this.progressBarControl1.Name = "progressBarControl1";
-            this.progressBarControl1.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.progressBarControl1.Properties.FlowAnimationDelay = 2500;
-            this.progressBarControl1.Properties.FlowAnimationDuration = 1000;
-            this.progressBarControl1.Properties.FlowAnimationEnabled = true;
-            this.progressBarControl1.Properties.ShowTitle = true;
-            this.progressBarControl1.Size = new System.Drawing.Size(697, 25);
-            this.progressBarControl1.TabIndex = 3;
             // 
             // timer1
             // 
@@ -100,6 +72,34 @@
             this.imageCollectionFrmLogin.Images.SetKeyName(1, "logo.png");
             this.imageCollectionFrmLogin.Images.SetKeyName(2, "check.png");
             // 
+            // progressBarControl1
+            // 
+            this.progressBarControl1.Location = new System.Drawing.Point(0, 296);
+            this.progressBarControl1.Name = "progressBarControl1";
+            this.progressBarControl1.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.progressBarControl1.Properties.FlowAnimationDelay = 2500;
+            this.progressBarControl1.Properties.FlowAnimationDuration = 1000;
+            this.progressBarControl1.Properties.FlowAnimationEnabled = true;
+            this.progressBarControl1.Properties.ShowTitle = true;
+            this.progressBarControl1.Size = new System.Drawing.Size(697, 25);
+            this.progressBarControl1.TabIndex = 3;
+            // 
+            // imageSlider1
+            // 
+            this.imageSlider1.AllowLooping = true;
+            this.imageSlider1.AnimationTime = 1000;
+            this.imageSlider1.AutoSlide = DevExpress.XtraEditors.Controls.AutoSlide.Forward;
+            this.imageSlider1.AutoSlideInterval = 1000;
+            this.imageSlider1.CurrentImageIndex = 0;
+            this.imageSlider1.Images.Add(((System.Drawing.Image)(resources.GetObject("imageSlider1.Images"))));
+            this.imageSlider1.Images.Add(((System.Drawing.Image)(resources.GetObject("imageSlider1.Images1"))));
+            this.imageSlider1.Images.Add(((System.Drawing.Image)(resources.GetObject("imageSlider1.Images2"))));
+            this.imageSlider1.Location = new System.Drawing.Point(0, 0);
+            this.imageSlider1.Name = "imageSlider1";
+            this.imageSlider1.Size = new System.Drawing.Size(697, 299);
+            this.imageSlider1.TabIndex = 1;
+            this.imageSlider1.Text = "imageSlider1";
+            // 
             // frmLoading
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -112,9 +112,9 @@
             this.Text = "frmLoading";
             this.Load += new System.EventHandler(this.frmLoading_Load);
             this.directXFormContainerControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.imageSlider1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.progressBarControl1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollectionFrmLogin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.progressBarControl1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imageSlider1)).EndInit();
             this.ResumeLayout(false);
 
         }

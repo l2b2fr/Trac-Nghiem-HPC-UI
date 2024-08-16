@@ -21,7 +21,7 @@ namespace Trac_Nghiem_HPC_UI
         }
         private void frmLogin_Load(object sender, EventArgs e)
         {
-            
+
         }
         private void frmLogin_HtmlElementMouseClick(object sender, DevExpress.Utils.Html.DxHtmlElementMouseEventArgs e)
         {
@@ -67,7 +67,19 @@ namespace Trac_Nghiem_HPC_UI
 
         private void alertControlSucces_HtmlElementMouseClick(object sender, DevExpress.XtraBars.Alerter.AlertHtmlElementMouseEventArgs e)
         {
-            if (e.ElementId == "okButton") e.HtmlPopup.Close(); 
+            if (e.ElementId == "okButton") e.HtmlPopup.Close();
+        }
+
+        private void checkEditHienMatKhau_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkEditHienMatKhau.Checked)
+            {
+                ipMatKhau.Properties.PasswordChar = '\0';
+            }
+            else
+            {
+                ipMatKhau.Properties.PasswordChar = '*';
+            }
         }
     }
 }

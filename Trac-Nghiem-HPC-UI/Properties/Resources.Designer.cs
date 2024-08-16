@@ -103,9 +103,9 @@ namespace Trac_Nghiem_HPC_UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap f814f9ee86f9897f7482c28cf25322e0 {
+        internal static System.Drawing.Bitmap f814f9ee86f9897f7482c28cf25322e0_jpg {
             get {
-                object obj = ResourceManager.GetObject("f814f9ee86f9897f7482c28cf25322e0", resourceCulture);
+                object obj = ResourceManager.GetObject("f814f9ee86f9897f7482c28cf25322e0.jpg", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -28,8 +28,7 @@ namespace Trac_Nghiem_HPC_UI
         {
             progressValue += 1;
             progressBarControl1.Position = progressValue;
-
-            if (progressValue >= 100)
+            if (progressBarControl1.Position == 100)
             {
                 timer1.Stop();
                 this.Close();
