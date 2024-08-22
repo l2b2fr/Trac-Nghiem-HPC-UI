@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDashboard));
             this.directXFormContainerControl1 = new DevExpress.XtraEditors.DirectXFormContainerControl();
-            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
             this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement3 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -49,8 +48,8 @@
             this.htmlTemplateCollectionFrmLogin = new DevExpress.Utils.Html.HtmlTemplateCollection();
             this.htmlMesage = new DevExpress.Utils.Html.HtmlTemplate();
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
+            this.xtraUserControlMain = new DevExpress.XtraEditors.XtraUserControl();
             this.directXFormContainerControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
@@ -60,7 +59,7 @@
             // 
             // directXFormContainerControl1
             // 
-            this.directXFormContainerControl1.Controls.Add(this.panelControl1);
+            this.directXFormContainerControl1.Controls.Add(this.xtraUserControlMain);
             this.directXFormContainerControl1.Controls.Add(this.accordionControl1);
             this.directXFormContainerControl1.Controls.Add(this.panelControl2);
             this.directXFormContainerControl1.Location = new System.Drawing.Point(0, 0);
@@ -68,17 +67,6 @@
             this.directXFormContainerControl1.Name = "directXFormContainerControl1";
             this.directXFormContainerControl1.Size = new System.Drawing.Size(1920, 1080);
             this.directXFormContainerControl1.TabIndex = 0;
-            // 
-            // panelControl1
-            // 
-            this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelControl1.Location = new System.Drawing.Point(54, 62);
-            this.panelControl1.LookAndFeel.SkinMaskColor = System.Drawing.Color.White;
-            this.panelControl1.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.panelControl1.Margin = new System.Windows.Forms.Padding(4);
-            this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(1866, 1018);
-            this.panelControl1.TabIndex = 2;
             // 
             // accordionControl1
             // 
@@ -272,6 +260,16 @@
             // 
             this.defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2016 Colorful";
             // 
+            // xtraUserControlMain
+            // 
+            this.xtraUserControlMain.Appearance.BackColor = System.Drawing.Color.White;
+            this.xtraUserControlMain.Appearance.Options.UseBackColor = true;
+            this.xtraUserControlMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.xtraUserControlMain.Location = new System.Drawing.Point(54, 62);
+            this.xtraUserControlMain.Name = "xtraUserControlMain";
+            this.xtraUserControlMain.Size = new System.Drawing.Size(1866, 1018);
+            this.xtraUserControlMain.TabIndex = 2;
+            // 
             // frmDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -288,7 +286,6 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmDashboard_FormClosing);
             this.Load += new System.EventHandler(this.frmDashboard_Load);
             this.directXFormContainerControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
@@ -314,11 +311,11 @@
         private DevExpress.Utils.Html.HtmlTemplateCollection htmlTemplateCollectionFrmLogin;
         private DevExpress.Utils.Html.HtmlTemplate htmlMesage;
         private DevExpress.LookAndFeel.DefaultLookAndFeel defaultLookAndFeel1;
-        private DevExpress.XtraEditors.PanelControl panelControl1;
         private DevExpress.XtraEditors.PanelControl panelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;
         private DevExpress.XtraEditors.PictureEdit pictureEdit2;
         private DevExpress.XtraEditors.LabelControl labelControl2;
+        private DevExpress.XtraEditors.XtraUserControl xtraUserControlMain;
     }
 }

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Trac_Nghiem_HPC_UI.UI;
 
 namespace Trac_Nghiem_HPC_UI
 {
@@ -28,6 +29,9 @@ namespace Trac_Nghiem_HPC_UI
             this.FormBorderStyle = FormBorderStyle.None;
             this.WindowState = FormWindowState.Maximized;
             this.TopMost = true;
+            ucDashboard ucDashboard = new ucDashboard();
+            ucDashboard.Dock = DockStyle.Fill;
+            xtraUserControlMain.Controls.Add(ucDashboard);
         }
 
         private void actrThoat_Click(object sender, EventArgs e)
