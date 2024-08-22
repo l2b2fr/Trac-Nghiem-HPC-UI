@@ -127,6 +127,9 @@
     <EmbeddedResource Include="UI\ucDashboard.resx">
       <DependentUpon>ucDashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\ucMonThi.resx">
+      <DependentUpon>ucMonThi.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -156,6 +159,12 @@
     </Compile>
     <Compile Include="UI\ucDashboard.Designer.cs">
       <DependentUpon>ucDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ucMonThi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ucMonThi.Designer.cs">
+      <DependentUpon>ucMonThi.cs</DependentUpon>
     </Compile>
     <Compile Include="Utilities\HtmlCssAsset.cs" />
   </ItemGroup>

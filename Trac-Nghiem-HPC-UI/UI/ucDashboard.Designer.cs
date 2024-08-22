@@ -121,6 +121,7 @@
             // 
             this.tileView1.GridControl = this.gridControl1;
             this.tileView1.Name = "tileView1";
+            this.tileView1.OptionsBehavior.AllowSmoothScrolling = true;
             this.tileView1.OptionsTiles.ColumnCount = 2;
             this.tileView1.OptionsTiles.GroupTextPadding = new System.Windows.Forms.Padding(12, 8, 12, 8);
             this.tileView1.OptionsTiles.IndentBetweenGroups = 0;
@@ -131,6 +132,7 @@
             this.tileView1.OptionsTiles.Orientation = System.Windows.Forms.Orientation.Vertical;
             this.tileView1.OptionsTiles.Padding = new System.Windows.Forms.Padding(0);
             this.tileView1.OptionsTiles.RowCount = 0;
+            this.tileView1.OptionsTiles.ScrollMode = DevExpress.XtraEditors.TileControlScrollMode.TouchScrollBar;
             this.tileView1.TileHtmlTemplate.Styles = resources.GetString("tileView1.TileHtmlTemplate.Styles");
             this.tileView1.TileHtmlTemplate.Template = resources.GetString("tileView1.TileHtmlTemplate.Template");
             // 

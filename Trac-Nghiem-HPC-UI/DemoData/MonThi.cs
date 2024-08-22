@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,6 +11,7 @@ namespace Trac_Nghiem_HPC_UI.DemoData
     {
         public string TenMonThi { get; set; }
         public string ChiTietMonThi { get; set; }
+        public Image Photo { get; set; }
         public DateTime NgayThi { get; set; }
         public string GiaoVien { get; set; }
         public string PriorityName { get; set; }
@@ -33,6 +35,8 @@ namespace Trac_Nghiem_HPC_UI.DemoData
                 DanhSachKhoa = new List<Khoa>()
             };
 
+
+            // Tạo danh sách Khoa từ các tên khoa được cung cấp
             foreach (var tenKhoa in tenKhoaList)
             {
                 monThi.DanhSachKhoa.Add(Khoa.FakeData(tenKhoa));

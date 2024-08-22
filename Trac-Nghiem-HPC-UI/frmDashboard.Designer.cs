@@ -31,13 +31,12 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDashboard));
             this.directXFormContainerControl1 = new DevExpress.XtraEditors.DirectXFormContainerControl();
+            this.xtraUserControlMain = new DevExpress.XtraEditors.XtraUserControl();
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
-            this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement3 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement2 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement6 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement4 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement5 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlTrangChu = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlMonThi = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlLichSuThi = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlThongTin = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.actrDangNhap = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.actrThoat = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
@@ -48,7 +47,6 @@
             this.htmlTemplateCollectionFrmLogin = new DevExpress.Utils.Html.HtmlTemplateCollection();
             this.htmlMesage = new DevExpress.Utils.Html.HtmlTemplate();
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
-            this.xtraUserControlMain = new DevExpress.XtraEditors.XtraUserControl();
             this.directXFormContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
@@ -68,18 +66,26 @@
             this.directXFormContainerControl1.Size = new System.Drawing.Size(1920, 1080);
             this.directXFormContainerControl1.TabIndex = 0;
             // 
+            // xtraUserControlMain
+            // 
+            this.xtraUserControlMain.Appearance.BackColor = System.Drawing.Color.White;
+            this.xtraUserControlMain.Appearance.Options.UseBackColor = true;
+            this.xtraUserControlMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.xtraUserControlMain.Location = new System.Drawing.Point(54, 62);
+            this.xtraUserControlMain.Name = "xtraUserControlMain";
+            this.xtraUserControlMain.Size = new System.Drawing.Size(1866, 1018);
+            this.xtraUserControlMain.TabIndex = 2;
+            // 
             // accordionControl1
             // 
             this.accordionControl1.Appearance.AccordionControl.BorderColor = System.Drawing.Color.White;
             this.accordionControl1.Appearance.AccordionControl.Options.UseBorderColor = true;
             this.accordionControl1.Dock = System.Windows.Forms.DockStyle.Left;
             this.accordionControl1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlElement1,
-            this.accordionControlElement3,
-            this.accordionControlElement2,
-            this.accordionControlElement6,
-            this.accordionControlElement4,
-            this.accordionControlElement5,
+            this.accordionControlTrangChu,
+            this.accordionControlMonThi,
+            this.accordionControlLichSuThi,
+            this.accordionControlThongTin,
             this.actrDangNhap,
             this.actrThoat});
             this.accordionControl1.Location = new System.Drawing.Point(0, 62);
@@ -90,67 +96,45 @@
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
-            // accordionControlElement1
+            // accordionControlTrangChu
             // 
-            this.accordionControlElement1.Appearance.Default.BackColor = System.Drawing.Color.Transparent;
-            this.accordionControlElement1.Appearance.Default.Font = new System.Drawing.Font("Roboto Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.accordionControlElement1.Appearance.Default.Options.UseBackColor = true;
-            this.accordionControlElement1.Appearance.Default.Options.UseFont = true;
-            this.accordionControlElement1.Appearance.Hovered.BackColor = System.Drawing.Color.White;
-            this.accordionControlElement1.Appearance.Hovered.Options.UseBackColor = true;
-            this.accordionControlElement1.Appearance.Normal.BackColor = System.Drawing.Color.White;
-            this.accordionControlElement1.Appearance.Normal.Options.UseBackColor = true;
-            this.accordionControlElement1.Appearance.Pressed.BackColor = System.Drawing.Color.White;
-            this.accordionControlElement1.Appearance.Pressed.Options.UseBackColor = true;
-            this.accordionControlElement1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement1.ImageOptions.SvgImage")));
-            this.accordionControlElement1.Name = "accordionControlElement1";
-            this.accordionControlElement1.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement1.Text = "Trang Chủ";
+            this.accordionControlTrangChu.Appearance.Default.Font = new System.Drawing.Font("Roboto Medium", 12F, System.Drawing.FontStyle.Bold);
+            this.accordionControlTrangChu.Appearance.Default.Options.UseFont = true;
+            this.accordionControlTrangChu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlTrangChu.ImageOptions.SvgImage")));
+            this.accordionControlTrangChu.Name = "accordionControlTrangChu";
+            this.accordionControlTrangChu.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlTrangChu.Text = "Trang Chủ";
+            this.accordionControlTrangChu.Click += new System.EventHandler(this.accordionControlTrangChu_Click);
             // 
-            // accordionControlElement3
+            // accordionControlMonThi
             // 
-            this.accordionControlElement3.Appearance.Default.Font = new System.Drawing.Font("Roboto Medium", 12F, System.Drawing.FontStyle.Bold);
-            this.accordionControlElement3.Appearance.Default.Options.UseFont = true;
-            this.accordionControlElement3.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement3.ImageOptions.SvgImage")));
-            this.accordionControlElement3.Name = "accordionControlElement3";
-            this.accordionControlElement3.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement3.Text = "Làm Bài Thi";
+            this.accordionControlMonThi.Appearance.Default.Font = new System.Drawing.Font("Roboto Medium", 12F, System.Drawing.FontStyle.Bold);
+            this.accordionControlMonThi.Appearance.Default.Options.UseFont = true;
+            this.accordionControlMonThi.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlMonThi.ImageOptions.SvgImage")));
+            this.accordionControlMonThi.Name = "accordionControlMonThi";
+            this.accordionControlMonThi.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlMonThi.Text = "Môn Thi";
+            this.accordionControlMonThi.Click += new System.EventHandler(this.accordionControlMonThi_Click);
             // 
-            // accordionControlElement2
+            // accordionControlLichSuThi
             // 
-            this.accordionControlElement2.Appearance.Default.Font = new System.Drawing.Font("Roboto Medium", 12F, System.Drawing.FontStyle.Bold);
-            this.accordionControlElement2.Appearance.Default.Options.UseFont = true;
-            this.accordionControlElement2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement2.ImageOptions.SvgImage")));
-            this.accordionControlElement2.Name = "accordionControlElement2";
-            this.accordionControlElement2.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement2.Text = "Phòng Thi";
+            this.accordionControlLichSuThi.Appearance.Default.Font = new System.Drawing.Font("Roboto Medium", 12F, System.Drawing.FontStyle.Bold);
+            this.accordionControlLichSuThi.Appearance.Default.Options.UseFont = true;
+            this.accordionControlLichSuThi.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlLichSuThi.ImageOptions.SvgImage")));
+            this.accordionControlLichSuThi.Name = "accordionControlLichSuThi";
+            this.accordionControlLichSuThi.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlLichSuThi.Text = "Lịch Sử Thi";
+            this.accordionControlLichSuThi.Click += new System.EventHandler(this.accordionControlLichSuThi_Click);
             // 
-            // accordionControlElement6
+            // accordionControlThongTin
             // 
-            this.accordionControlElement6.Appearance.Default.Font = new System.Drawing.Font("Roboto Medium", 12F, System.Drawing.FontStyle.Bold);
-            this.accordionControlElement6.Appearance.Default.Options.UseFont = true;
-            this.accordionControlElement6.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement6.ImageOptions.SvgImage")));
-            this.accordionControlElement6.Name = "accordionControlElement6";
-            this.accordionControlElement6.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement6.Text = "Môn Thi";
-            // 
-            // accordionControlElement4
-            // 
-            this.accordionControlElement4.Appearance.Default.Font = new System.Drawing.Font("Roboto Medium", 12F, System.Drawing.FontStyle.Bold);
-            this.accordionControlElement4.Appearance.Default.Options.UseFont = true;
-            this.accordionControlElement4.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement4.ImageOptions.SvgImage")));
-            this.accordionControlElement4.Name = "accordionControlElement4";
-            this.accordionControlElement4.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement4.Text = "Lịch Sử Thi";
-            // 
-            // accordionControlElement5
-            // 
-            this.accordionControlElement5.Appearance.Default.Font = new System.Drawing.Font("Roboto Medium", 12F, System.Drawing.FontStyle.Bold);
-            this.accordionControlElement5.Appearance.Default.Options.UseFont = true;
-            this.accordionControlElement5.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement5.ImageOptions.SvgImage")));
-            this.accordionControlElement5.Name = "accordionControlElement5";
-            this.accordionControlElement5.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement5.Text = "Thông Tin";
+            this.accordionControlThongTin.Appearance.Default.Font = new System.Drawing.Font("Roboto Medium", 12F, System.Drawing.FontStyle.Bold);
+            this.accordionControlThongTin.Appearance.Default.Options.UseFont = true;
+            this.accordionControlThongTin.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlThongTin.ImageOptions.SvgImage")));
+            this.accordionControlThongTin.Name = "accordionControlThongTin";
+            this.accordionControlThongTin.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlThongTin.Text = "Thông Tin";
+            this.accordionControlThongTin.Click += new System.EventHandler(this.accordionControlThongTin_Click);
             // 
             // actrDangNhap
             // 
@@ -260,18 +244,12 @@
             // 
             this.defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2016 Colorful";
             // 
-            // xtraUserControlMain
-            // 
-            this.xtraUserControlMain.Appearance.BackColor = System.Drawing.Color.White;
-            this.xtraUserControlMain.Appearance.Options.UseBackColor = true;
-            this.xtraUserControlMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.xtraUserControlMain.Location = new System.Drawing.Point(54, 62);
-            this.xtraUserControlMain.Name = "xtraUserControlMain";
-            this.xtraUserControlMain.Size = new System.Drawing.Size(1866, 1018);
-            this.xtraUserControlMain.TabIndex = 2;
-            // 
             // frmDashboard
             // 
+            this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.Appearance.BorderColor = System.Drawing.Color.Transparent;
+            this.Appearance.Options.UseBackColor = true;
+            this.Appearance.Options.UseBorderColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ChildControls.Add(this.directXFormContainerControl1);
@@ -300,12 +278,9 @@
 
         private DevExpress.XtraEditors.DirectXFormContainerControl directXFormContainerControl1;
         private DevExpress.XtraBars.Navigation.AccordionControl accordionControl1;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement1;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement3;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement2;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement6;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement4;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement5;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlMonThi;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlLichSuThi;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlThongTin;
         private DevExpress.XtraBars.Navigation.AccordionControlElement actrDangNhap;
         private DevExpress.XtraBars.Navigation.AccordionControlElement actrThoat;
         private DevExpress.Utils.Html.HtmlTemplateCollection htmlTemplateCollectionFrmLogin;
@@ -317,5 +292,6 @@
         private DevExpress.XtraEditors.PictureEdit pictureEdit2;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.XtraUserControl xtraUserControlMain;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlTrangChu;
     }
 }

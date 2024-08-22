@@ -27,13 +27,13 @@ namespace Trac_Nghiem_HPC_UI.UI
         }
         private void LoadData()
         {
-            var danhSachMonThi = MonThi.FakeMultipleData(30); // Tạo 5 môn thi giả
+            var danhSachMonThi = MonThi.FakeMultipleData(30);
             gridControl1.DataSource = danhSachMonThi;
         }
 
         private void LoadDataChart()
         {
-            var series = new Series("Doanh số", ViewType.StackedBar);
+            var series = new Series("Thành tích hoạt động của bạn", ViewType.StackedBar);
             series.Points.Add(new SeriesPoint("Nhập môn lập trình", 10) { Color = Color.Red });
             series.Points.Add(new SeriesPoint("Cấu trúc dữ liệu", 6) { Color = Color.Blue });
             series.Points.Add(new SeriesPoint("Hệ điều hành", 2) { Color = Color.Green });

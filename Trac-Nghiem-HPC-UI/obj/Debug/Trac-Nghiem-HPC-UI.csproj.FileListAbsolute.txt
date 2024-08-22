@@ -89,3 +89,4 @@ C:\Users\LEMINHNAM\Desktop\Trac-Nghiem-HPC-UI\Trac-Nghiem-HPC-UI\bin\Debug\DevEx
 C:\Users\LEMINHNAM\Desktop\Trac-Nghiem-HPC-UI\Trac-Nghiem-HPC-UI\bin\Debug\DevExpress.XtraScheduler.v24.1.xml
 C:\Users\LEMINHNAM\Desktop\Trac-Nghiem-HPC-UI\Trac-Nghiem-HPC-UI\bin\Debug\DevExpress.XtraScheduler.v24.1.Core.xml
 C:\Users\LEMINHNAM\Desktop\Trac-Nghiem-HPC-UI\Trac-Nghiem-HPC-UI\bin\Debug\DevExpress.XtraScheduler.v24.1.Core.Desktop.xml
+C:\Users\LEMINHNAM\Desktop\Trac-Nghiem-HPC-UI\Trac-Nghiem-HPC-UI\obj\Debug\Trac_Nghiem_HPC_UI.UI.ucMonThi.resources
