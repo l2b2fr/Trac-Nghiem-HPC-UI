@@ -82,6 +82,7 @@
     <Reference Include="DevExpress.Printing.v23.1.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DemoData\BaiKiemTra.cs" />
     <Compile Include="DemoData\Khoa.cs" />
     <Compile Include="DemoData\MonThi.cs" />
     <Compile Include="frmDashboard.cs">

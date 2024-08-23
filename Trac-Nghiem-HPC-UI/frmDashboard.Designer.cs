@@ -40,8 +40,7 @@
             this.actrDangNhap = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.actrThoat = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.pictureEdit2 = new DevExpress.XtraEditors.PictureEdit();
+            this.htmlContentControl1 = new DevExpress.XtraEditors.HtmlContentControl();
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.htmlTemplateCollectionFrmLogin = new DevExpress.Utils.Html.HtmlTemplateCollection();
@@ -51,7 +50,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.htmlContentControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
@@ -160,8 +159,7 @@
             // 
             this.panelControl2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.panelControl2.Appearance.Options.UseBackColor = true;
-            this.panelControl2.Controls.Add(this.labelControl2);
-            this.panelControl2.Controls.Add(this.pictureEdit2);
+            this.panelControl2.Controls.Add(this.htmlContentControl1);
             this.panelControl2.Controls.Add(this.pictureEdit1);
             this.panelControl2.Controls.Add(this.labelControl1);
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -171,38 +169,25 @@
             this.panelControl2.Size = new System.Drawing.Size(1920, 62);
             this.panelControl2.TabIndex = 1;
             // 
-            // labelControl2
+            // htmlContentControl1
             // 
-            this.labelControl2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Roboto Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(1802, 23);
-            this.labelControl2.Margin = new System.Windows.Forms.Padding(4);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(111, 20);
-            this.labelControl2.TabIndex = 6;
-            this.labelControl2.Text = "Nguyễn Thị A";
-            // 
-            // pictureEdit2
-            // 
-            this.pictureEdit2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureEdit2.EditValue = global::Trac_Nghiem_HPC_UI.Properties.Resources.f814f9ee86f9897f7482c28cf25322e0_jpg;
-            this.pictureEdit2.Location = new System.Drawing.Point(1744, 6);
-            this.pictureEdit2.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureEdit2.Name = "pictureEdit2";
-            this.pictureEdit2.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pictureEdit2.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pictureEdit2.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit2.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
-            this.pictureEdit2.Size = new System.Drawing.Size(50, 50);
-            this.pictureEdit2.TabIndex = 5;
+            this.htmlContentControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.htmlContentControl1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.htmlContentControl1.HtmlTemplate.Styles = resources.GetString("htmlContentControl1.HtmlTemplate.Styles");
+            this.htmlContentControl1.HtmlTemplate.Template = "<div class=\"hder_point\">\r\n    <div id=\"point _green\" class=\"point _green\"></div>\r" +
+    "\n    <div id=\"point _red\" class=\"point _red\"></div>\r\n</div>";
+            this.htmlContentControl1.Location = new System.Drawing.Point(1766, 5);
+            this.htmlContentControl1.Name = "htmlContentControl1";
+            this.htmlContentControl1.Size = new System.Drawing.Size(149, 52);
+            this.htmlContentControl1.TabIndex = 3;
+            this.htmlContentControl1.ElementMouseClick += new DevExpress.Utils.Html.DxHtmlElementMouseEventHandler(this.htmlContentControl1_ElementMouseClick);
             // 
             // pictureEdit1
             // 
             this.pictureEdit1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureEdit1.EditValue = global::Trac_Nghiem_HPC_UI.Properties.Resources.logo;
+            this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
             this.pictureEdit1.Location = new System.Drawing.Point(4, 8);
             this.pictureEdit1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureEdit1.Name = "pictureEdit1";
@@ -268,7 +253,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
             this.panelControl2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.htmlContentControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
 
@@ -289,9 +274,8 @@
         private DevExpress.XtraEditors.PanelControl panelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;
-        private DevExpress.XtraEditors.PictureEdit pictureEdit2;
-        private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.XtraUserControl xtraUserControlMain;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlTrangChu;
+        private DevExpress.XtraEditors.HtmlContentControl htmlContentControl1;
     }
 }

@@ -126,5 +126,26 @@ namespace Trac_Nghiem_HPC_UI
 
             accordionControl.Appearance.Default.BackColor = Color.White;
         }
+
+        private void htmlContentControl1_ElementMouseClick(object sender, DevExpress.Utils.Html.DxHtmlElementMouseEventArgs e)
+        {
+            if (e.ElementId == "point _red")
+            {
+                var arg = new XtraMessageBoxArgs();
+                arg.HtmlTemplate.Assign(htmlMesage);
+                arg.Caption = "Thông báo";
+                arg.Text = "Bạn có muốn thoát?";
+                arg.DefaultButtonIndex = 0;
+                var result = XtraMessageBox.Show(arg);
+                if (result == DialogResult.Yes)
+                {
+                    Application.Exit();
+                }
+            }
+            if (e.ElementId == "point _green")
+            {
+                this.WindowState = FormWindowState.Minimized;
+            }
+        }
     }
 }
