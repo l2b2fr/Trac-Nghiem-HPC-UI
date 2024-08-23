@@ -114,6 +114,7 @@
             this.imageCollection1.Images.SetKeyName(11, "exam.png");
             this.imageCollection1.Images.SetKeyName(12, "education.png");
             this.imageCollection1.Images.SetKeyName(13, "group.png");
+            this.imageCollection1.Images.SetKeyName(14, "human-book.png");
             // 
             // htmlContentControl2
             // 
@@ -171,10 +172,10 @@
             this.htmlContentControl1.HtmlImages = this.imageCollection1;
             this.htmlContentControl1.HtmlTemplate.Styles = resources.GetString("htmlContentControl1.HtmlTemplate.Styles");
             this.htmlContentControl1.HtmlTemplate.Template = resources.GetString("htmlContentControl1.HtmlTemplate.Template");
-            this.htmlContentControl1.Location = new System.Drawing.Point(0, 390);
+            this.htmlContentControl1.Location = new System.Drawing.Point(10, 390);
             this.htmlContentControl1.Margin = new System.Windows.Forms.Padding(20);
             this.htmlContentControl1.Name = "htmlContentControl1";
-            this.htmlContentControl1.Size = new System.Drawing.Size(1158, 628);
+            this.htmlContentControl1.Size = new System.Drawing.Size(1148, 628);
             this.htmlContentControl1.TabIndex = 1;
             // 
             // ucMonThi

@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\LEMINHNAM\\Desktop\\Trac-Nghiem-HPC-UI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2C363F48-32AB-4CEC-8441-3F8BEB27BC78}|Trac-Nghiem-HPC-UI\\Trac-Nghiem-HPC-UI.csproj|c:\\users\\leminhnam\\desktop\\trac-nghiem-hpc-ui\\trac-nghiem-hpc-ui\\ui\\ucmonthi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2C363F48-32AB-4CEC-8441-3F8BEB27BC78}|Trac-Nghiem-HPC-UI\\Trac-Nghiem-HPC-UI.csproj|C:\\Users\\LEMINHNAM\\Desktop\\Trac-Nghiem-HPC-UI\\trac-nghiem-hpc-ui\\ui\\ucmonthi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2C363F48-32AB-4CEC-8441-3F8BEB27BC78}|Trac-Nghiem-HPC-UI\\Trac-Nghiem-HPC-UI.csproj|solutionrelative:trac-nghiem-hpc-ui\\ui\\ucmonthi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C363F48-32AB-4CEC-8441-3F8BEB27BC78}|Trac-Nghiem-HPC-UI\\Trac-Nghiem-HPC-UI.csproj|C:\\Users\\LEMINHNAM\\Desktop\\Trac-Nghiem-HPC-UI\\trac-nghiem-hpc-ui\\demodata\\monthi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C363F48-32AB-4CEC-8441-3F8BEB27BC78}|Trac-Nghiem-HPC-UI\\Trac-Nghiem-HPC-UI.csproj|solutionrelative:trac-nghiem-hpc-ui\\demodata\\monthi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C363F48-32AB-4CEC-8441-3F8BEB27BC78}|Trac-Nghiem-HPC-UI\\Trac-Nghiem-HPC-UI.csproj|C:\\Users\\LEMINHNAM\\Desktop\\Trac-Nghiem-HPC-UI\\trac-nghiem-hpc-ui\\ui\\ucmonthi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2C363F48-32AB-4CEC-8441-3F8BEB27BC78}|Trac-Nghiem-HPC-UI\\Trac-Nghiem-HPC-UI.csproj|c:\\users\\leminhnam\\desktop\\trac-nghiem-hpc-ui\\trac-nghiem-hpc-ui\\ui\\ucmonthi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C363F48-32AB-4CEC-8441-3F8BEB27BC78}|Trac-Nghiem-HPC-UI\\Trac-Nghiem-HPC-UI.csproj|solutionrelative:trac-nghiem-hpc-ui\\ui\\ucmonthi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C363F48-32AB-4CEC-8441-3F8BEB27BC78}|Trac-Nghiem-HPC-UI\\Trac-Nghiem-HPC-UI.csproj|C:\\Users\\LEMINHNAM\\Desktop\\Trac-Nghiem-HPC-UI\\trac-nghiem-hpc-ui\\demodata\\baikiemtra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C363F48-32AB-4CEC-8441-3F8BEB27BC78}|Trac-Nghiem-HPC-UI\\Trac-Nghiem-HPC-UI.csproj|solutionrelative:trac-nghiem-hpc-ui\\demodata\\baikiemtra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C363F48-32AB-4CEC-8441-3F8BEB27BC78}|Trac-Nghiem-HPC-UI\\Trac-Nghiem-HPC-UI.csproj|C:\\Users\\LEMINHNAM\\Desktop\\Trac-Nghiem-HPC-UI\\trac-nghiem-hpc-ui\\demodata\\khoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C363F48-32AB-4CEC-8441-3F8BEB27BC78}|Trac-Nghiem-HPC-UI\\Trac-Nghiem-HPC-UI.csproj|solutionrelative:trac-nghiem-hpc-ui\\demodata\\khoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,52 +26,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "ucMonThi.cs",
               "DocumentMoniker": "C:\\Users\\LEMINHNAM\\Desktop\\Trac-Nghiem-HPC-UI\\Trac-Nghiem-HPC-UI\\UI\\ucMonThi.cs",
               "RelativeDocumentMoniker": "Trac-Nghiem-HPC-UI\\UI\\ucMonThi.cs",
               "ToolTip": "C:\\Users\\LEMINHNAM\\Desktop\\Trac-Nghiem-HPC-UI\\Trac-Nghiem-HPC-UI\\UI\\ucMonThi.cs",
               "RelativeToolTip": "Trac-Nghiem-HPC-UI\\UI\\ucMonThi.cs",
-              "ViewState": "AQIAAJ0AAAAAAAAAAAAAwLEAAAAAAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAA1wCUAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T10:49:08.249Z",
+              "WhenOpened": "2024-08-23T13:17:56.309Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Khoa.cs",
-              "DocumentMoniker": "C:\\Users\\LEMINHNAM\\Desktop\\Trac-Nghiem-HPC-UI\\Trac-Nghiem-HPC-UI\\DemoData\\Khoa.cs",
-              "RelativeDocumentMoniker": "Trac-Nghiem-HPC-UI\\DemoData\\Khoa.cs",
-              "ToolTip": "C:\\Users\\LEMINHNAM\\Desktop\\Trac-Nghiem-HPC-UI\\Trac-Nghiem-HPC-UI\\DemoData\\Khoa.cs",
-              "RelativeToolTip": "Trac-Nghiem-HPC-UI\\DemoData\\Khoa.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T10:48:46.637Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BaiKiemTra.cs",
-              "DocumentMoniker": "C:\\Users\\LEMINHNAM\\Desktop\\Trac-Nghiem-HPC-UI\\Trac-Nghiem-HPC-UI\\DemoData\\BaiKiemTra.cs",
-              "RelativeDocumentMoniker": "Trac-Nghiem-HPC-UI\\DemoData\\BaiKiemTra.cs",
-              "ToolTip": "C:\\Users\\LEMINHNAM\\Desktop\\Trac-Nghiem-HPC-UI\\Trac-Nghiem-HPC-UI\\DemoData\\BaiKiemTra.cs",
-              "RelativeToolTip": "Trac-Nghiem-HPC-UI\\DemoData\\BaiKiemTra.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAwwBsAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T04:47:20.763Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MonThi.cs",
-              "DocumentMoniker": "C:\\Users\\LEMINHNAM\\Desktop\\Trac-Nghiem-HPC-UI\\Trac-Nghiem-HPC-UI\\DemoData\\MonThi.cs",
-              "RelativeDocumentMoniker": "Trac-Nghiem-HPC-UI\\DemoData\\MonThi.cs",
-              "ToolTip": "C:\\Users\\LEMINHNAM\\Desktop\\Trac-Nghiem-HPC-UI\\Trac-Nghiem-HPC-UI\\DemoData\\MonThi.cs",
-              "RelativeToolTip": "Trac-Nghiem-HPC-UI\\DemoData\\MonThi.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAADUAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T02:28:03.664Z"
             },
             {
               "$type": "Document",
