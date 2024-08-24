@@ -1,4 +1,5 @@
 ﻿using DevExpress.XtraEditors;
+using DevExpress.XtraGrid;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -177,6 +178,29 @@ namespace Trac_Nghiem_HPC_UI.UI
             danhSachBaiKiemTra.Add(baiKiemTra5);
 
             gridControl2.DataSource = danhSachBaiKiemTra;
+        }
+
+        private void tileView2_HtmlElementMouseClick(object sender, DevExpress.XtraGrid.Views.Tile.TileViewHtmlElementMouseEventArgs e)
+        {
+            if(e.ElementId == "kiemTraButton")
+            {
+                var selectedIndex = e.RowHandle;
+                if (gridControl2.DataSource is List<BaiKiemTra> dataList)
+                {
+                    if (selectedIndex >= 0 && selectedIndex < dataList.Count)
+                    {
+                        var tenBaiKiemTra = dataList[selectedIndex].TenBaiKiemTra?.ToString();
+                        List<BaiKiemTra> monThis = new List<BaiKiemTra>();
+                        monThis.Add(dataList[selectedIndex]);
+                        frmLamBai frmLamBai = new frmLamBai();
+                        frmLamBai.ShowDialog();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Chỉ mục hàng không hợp lệ được chọn.");
+                    }
+                }
+            }
         }
     }
 }

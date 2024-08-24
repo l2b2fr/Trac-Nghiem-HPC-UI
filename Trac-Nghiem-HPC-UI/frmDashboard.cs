@@ -33,7 +33,6 @@ namespace Trac_Nghiem_HPC_UI
             accordionControlTrangChu.Appearance.Default.BackColor = Color.White;
             this.FormBorderStyle = FormBorderStyle.None;
             this.WindowState = FormWindowState.Maximized;
-            this.TopMost = true;
             if(ucDashboard == null)
             {
                 ucDashboard = new ucDashboard();

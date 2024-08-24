@@ -31,15 +31,15 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLoading));
             this.directXFormContainerControl1 = new DevExpress.XtraEditors.DirectXFormContainerControl();
-            this.progressBarControl1 = new DevExpress.XtraEditors.ProgressBarControl();
-            this.imageSlider1 = new DevExpress.XtraEditors.Controls.ImageSlider();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.alertControlSucces = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
             this.imageCollectionFrmLogin = new DevExpress.Utils.ImageCollection(this.components);
+            this.progressBarControl1 = new DevExpress.XtraEditors.ProgressBarControl();
+            this.imageSlider1 = new DevExpress.XtraEditors.Controls.ImageSlider();
             this.directXFormContainerControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imageCollectionFrmLogin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.progressBarControl1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageSlider1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imageCollectionFrmLogin)).BeginInit();
             this.SuspendLayout();
             // 
             // directXFormContainerControl1
@@ -51,6 +51,27 @@
             this.directXFormContainerControl1.Name = "directXFormContainerControl1";
             this.directXFormContainerControl1.Size = new System.Drawing.Size(813, 395);
             this.directXFormContainerControl1.TabIndex = 0;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 25;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // alertControlSucces
+            // 
+            this.alertControlSucces.HtmlImages = this.imageCollectionFrmLogin;
+            this.alertControlSucces.HtmlTemplate.Styles = resources.GetString("alertControlSucces.HtmlTemplate.Styles");
+            this.alertControlSucces.HtmlTemplate.Template = resources.GetString("alertControlSucces.HtmlTemplate.Template");
+            this.alertControlSucces.HtmlElementMouseClick += new DevExpress.XtraBars.Alerter.AlertHtmlElementMouseClickEventHandler(this.alertControlSucces_HtmlElementMouseClick);
+            // 
+            // imageCollectionFrmLogin
+            // 
+            this.imageCollectionFrmLogin.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageCollectionFrmLogin.ImageStream = ((DevExpress.Utils.ImageCollectionStreamer)(resources.GetObject("imageCollectionFrmLogin.ImageStream")));
+            this.imageCollectionFrmLogin.IsDpiAware = DevExpress.Utils.DefaultBoolean.True;
+            this.imageCollectionFrmLogin.Images.SetKeyName(0, "img_view.png");
+            this.imageCollectionFrmLogin.Images.SetKeyName(1, "logo.png");
+            this.imageCollectionFrmLogin.Images.SetKeyName(2, "check.png");
             // 
             // progressBarControl1
             // 
@@ -81,27 +102,6 @@
             this.imageSlider1.TabIndex = 1;
             this.imageSlider1.Text = "imageSlider1";
             // 
-            // timer1
-            // 
-            this.timer1.Interval = 25;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // alertControlSucces
-            // 
-            this.alertControlSucces.HtmlImages = this.imageCollectionFrmLogin;
-            this.alertControlSucces.HtmlTemplate.Styles = resources.GetString("alertControlSucces.HtmlTemplate.Styles");
-            this.alertControlSucces.HtmlTemplate.Template = resources.GetString("alertControlSucces.HtmlTemplate.Template");
-            this.alertControlSucces.HtmlElementMouseClick += new DevExpress.XtraBars.Alerter.AlertHtmlElementMouseClickEventHandler(this.alertControlSucces_HtmlElementMouseClick);
-            // 
-            // imageCollectionFrmLogin
-            // 
-            this.imageCollectionFrmLogin.ImageSize = new System.Drawing.Size(16, 16);
-            this.imageCollectionFrmLogin.ImageStream = ((DevExpress.Utils.ImageCollectionStreamer)(resources.GetObject("imageCollectionFrmLogin.ImageStream")));
-            this.imageCollectionFrmLogin.IsDpiAware = DevExpress.Utils.DefaultBoolean.True;
-            this.imageCollectionFrmLogin.Images.SetKeyName(0, "img_view.png");
-            this.imageCollectionFrmLogin.Images.SetKeyName(1, "logo.png");
-            this.imageCollectionFrmLogin.Images.SetKeyName(2, "check.png");
-            // 
             // frmLoading
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -115,9 +115,9 @@
             this.Text = "frmLoading";
             this.Load += new System.EventHandler(this.frmLoading_Load);
             this.directXFormContainerControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.imageCollectionFrmLogin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.progressBarControl1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageSlider1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imageCollectionFrmLogin)).EndInit();
             this.ResumeLayout(false);
 
         }

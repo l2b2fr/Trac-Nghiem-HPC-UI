@@ -9637,7 +9637,7 @@
         f0zoJ8qi+gELAN3QP2b8P3Vu2b2yh7y5fqYhhDibGbLewF2Bwd8auFl5XTEd3ADQbIlylir9aZXdZdP6
         WYUQ4mUmyRvVwfwZdVDvrPxYOWPglbtT5Br1f/cq8wFE5Ublj8r/Kr9S54dvqvPBdpXpskX9rEEIIYQQ
         QgghhBBCCCGEEEIIIYQQQgghhBBCsqVS+f8Nt0RgsV1wsQAAAABJRU5ErkJggk8tAACJUE5HDQoaCgAA
-        AA1JSERSAAACAAAAAgAIBgAAAPR41PoAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA69AAAOvQFH+5Ct
+        AA1JSERSAAACAAAAAgAIBgAAAPR41PoAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA68AAAOvAGVvHJJ
         AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAALMxJREFUeF7t3QuQlfWZ53EmorUm
         mRpjTc1sMpPK6JgJ3naMZGfCpREVGlCuytG+gSRrEgfNxWTXTCWVsUvQppXgLZo4k2xK3alJnAS8rGIS
         LbRBMIlbxiROzRR0AyExoJgoKBcF//sezuOIp39Av939Pud9/+/3W/WpZKt2cuRA/x6k325GEBERERER
@@ -14322,7 +14322,7 @@
 	&lt;/div&gt;
 	&lt;div class="content-right"&gt;
 		&lt;h2&gt;Thời gian &lt;span&gt;${ThoiGian}&lt;/span&gt; phút&lt;/h2&gt;
-		&lt;div id="detailButton" class="button" onclick="onDetailButtonClick"&gt;
+		&lt;div id="kiemTraButton" class="button" onclick="onDetailButtonClick"&gt;
 					Kiểm tra
 		&lt;/div&gt;
 	&lt;/div&gt;

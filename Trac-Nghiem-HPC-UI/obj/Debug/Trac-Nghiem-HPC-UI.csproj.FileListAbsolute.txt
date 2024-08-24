@@ -90,3 +90,4 @@ C:\Users\LEMINHNAM\Desktop\Trac-Nghiem-HPC-UI\Trac-Nghiem-HPC-UI\obj\Debug\Trac-
 C:\Users\LEMINHNAM\Desktop\Trac-Nghiem-HPC-UI\Trac-Nghiem-HPC-UI\obj\Debug\Trac-Ngh.D40622D5.Up2Date
 C:\Users\LEMINHNAM\Desktop\Trac-Nghiem-HPC-UI\Trac-Nghiem-HPC-UI\obj\Debug\Trac-Nghiem-HPC-UI.exe
 C:\Users\LEMINHNAM\Desktop\Trac-Nghiem-HPC-UI\Trac-Nghiem-HPC-UI\obj\Debug\Trac-Nghiem-HPC-UI.pdb
+C:\Users\LEMINHNAM\Desktop\Trac-Nghiem-HPC-UI\Trac-Nghiem-HPC-UI\obj\Debug\Trac_Nghiem_HPC_UI.frmLamBai.resources

@@ -160,6 +160,7 @@
             this.tileView2.OptionsTiles.ScrollMode = DevExpress.XtraEditors.TileControlScrollMode.None;
             this.tileView2.TileHtmlTemplate.Styles = resources.GetString("tileView2.TileHtmlTemplate.Styles");
             this.tileView2.TileHtmlTemplate.Template = resources.GetString("tileView2.TileHtmlTemplate.Template");
+            this.tileView2.HtmlElementMouseClick += new DevExpress.XtraGrid.Views.Tile.TileViewHtmlElementMouseEventHandler(this.tileView2_HtmlElementMouseClick);
             // 
             // gridView1
             // 
