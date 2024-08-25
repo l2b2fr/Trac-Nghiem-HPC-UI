@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Trac_Nghiem_HPC_UI.DemoData;
+using Trac_Nghiem_HPC_UI.Http;
 
 namespace Trac_Nghiem_HPC_UI.UI
 {
@@ -22,8 +23,16 @@ namespace Trac_Nghiem_HPC_UI.UI
 
         private void ucDashboard_Load(object sender, EventArgs e)
         {
+            LoadProfile();
             LoadData();
             LoadDataChart();
+        }
+
+        private void LoadProfile()
+        {
+            List<SinhVienResponse> response = new List<SinhVienResponse>();
+            response.Add(Program.sinhVienResponse);
+            htmlContentControlProfile.DataContext = response;
         }
         private void LoadData()
         {

@@ -31,14 +31,14 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucDashboard));
             DevExpress.XtraCharts.ChartTitle chartTitle1 = new DevExpress.XtraCharts.ChartTitle();
-            this.htmlContentControl1 = new DevExpress.XtraEditors.HtmlContentControl();
+            this.htmlContentControlProfile = new DevExpress.XtraEditors.HtmlContentControl();
             this.imageCollection1 = new DevExpress.Utils.ImageCollection(this.components);
             this.imageSlider1 = new DevExpress.XtraEditors.Controls.ImageSlider();
             this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.tileView1 = new DevExpress.XtraGrid.Views.Tile.TileView();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            ((System.ComponentModel.ISupportInitialize)(this.htmlContentControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.htmlContentControlProfile)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageSlider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
@@ -46,17 +46,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.tileView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // htmlContentControl1
+            // htmlContentControlProfile
             // 
-            this.htmlContentControl1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.htmlContentControl1.HtmlImages = this.imageCollection1;
-            this.htmlContentControl1.HtmlTemplate.Styles = resources.GetString("htmlContentControl1.HtmlTemplate.Styles");
-            this.htmlContentControl1.HtmlTemplate.Template = resources.GetString("htmlContentControl1.HtmlTemplate.Template");
-            this.htmlContentControl1.Location = new System.Drawing.Point(20, 20);
-            this.htmlContentControl1.Margin = new System.Windows.Forms.Padding(20, 20, 0, 20);
-            this.htmlContentControl1.Name = "htmlContentControl1";
-            this.htmlContentControl1.Size = new System.Drawing.Size(437, 408);
-            this.htmlContentControl1.TabIndex = 0;
+            this.htmlContentControlProfile.Cursor = System.Windows.Forms.Cursors.Default;
+            this.htmlContentControlProfile.HtmlImages = this.imageCollection1;
+            this.htmlContentControlProfile.HtmlTemplate.Styles = resources.GetString("htmlContentControl1.HtmlTemplate.Styles");
+            this.htmlContentControlProfile.HtmlTemplate.Template = resources.GetString("htmlContentControl1.HtmlTemplate.Template");
+            this.htmlContentControlProfile.Location = new System.Drawing.Point(20, 20);
+            this.htmlContentControlProfile.Margin = new System.Windows.Forms.Padding(20, 20, 0, 20);
+            this.htmlContentControlProfile.Name = "htmlContentControlProfile";
+            this.htmlContentControlProfile.Size = new System.Drawing.Size(437, 408);
+            this.htmlContentControlProfile.TabIndex = 0;
             // 
             // imageCollection1
             // 
@@ -161,12 +161,12 @@
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.chartControl1);
             this.Controls.Add(this.imageSlider1);
-            this.Controls.Add(this.htmlContentControl1);
+            this.Controls.Add(this.htmlContentControlProfile);
             this.Margin = new System.Windows.Forms.Padding(20);
             this.Name = "ucDashboard";
             this.Size = new System.Drawing.Size(1866, 1018);
             this.Load += new System.EventHandler(this.ucDashboard_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.htmlContentControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.htmlContentControlProfile)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageSlider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
@@ -179,7 +179,7 @@
 
         #endregion
 
-        private DevExpress.XtraEditors.HtmlContentControl htmlContentControl1;
+        private DevExpress.XtraEditors.HtmlContentControl htmlContentControlProfile;
         private DevExpress.XtraEditors.Controls.ImageSlider imageSlider1;
         private DevExpress.Utils.ImageCollection imageCollection1;
         private DevExpress.XtraCharts.ChartControl chartControl1;

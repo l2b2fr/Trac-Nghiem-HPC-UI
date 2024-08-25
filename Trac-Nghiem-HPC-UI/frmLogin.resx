@@ -129,7 +129,7 @@
         a2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAAChEZXZFeHByZXNzLlV0aWxzLkltYWdlQ29sbGVjdGlvblN0
         cmVhbWVyAgAAAAlJbWFnZVNpemUERGF0YQQHE1N5c3RlbS5EcmF3aW5nLlNpemUDAAAAAgIAAAAF/P//
         /xNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAwAAABAAAAAQAAAACQUAAAAP
-        BQAAANw9BgACttICAIlQTkcNChoKAAAADUlIRFIAAAGqAAABXAgGAAAAmUT68gAAAARnQU1BAACxjwv8
+        BQAAABxCBgACttICAIlQTkcNChoKAAAADUlIRFIAAAGqAAABXAgGAAAAmUT68gAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAACwwAAAsMAT9AIsgAAP+ySURBVHhe7P11vF7VnfaP//77/vF8X99nZp6ZClYvRIgB
         1Zl5ptMWKIW2VGc6pbiXUsHdIZ6gAQJxDxI9Jyee4+7urre7Xr/rWvve59znJEDSQpHen5Mra7vda6/3
         +izb/z9kLGMZy1jGMvYRtgyoMpaxjGUsYx9py4AqYxnLWMYy9pG2DKgylrGMZSxjH2nLgCpjGctYxjL2
@@ -6946,7 +6946,25 @@
         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
-        8IT8fvPf7ci/Y+A/eZueyOq5XP8fgJWFmqM+eHUAAAAASUVORK5CYIIL
+        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
 </value>
   </data>
   <metadata name="htmlTemplateCollectionFrmLogin.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -7021,6 +7039,85 @@
     &lt;/div&gt;
 &lt;/div&gt;</value>
   </data>
+  <data name="htmlMesageError.Styles" xml:space="preserve">
+    <value>.toast-notification {
+	display: flex;
+	flex-direction: row;
+	border-radius: 6px;
+	border-style: solid;
+	border-width: 1px 1px 1px 0px;
+	margin: 12px;
+	justify-content: space-around;
+	align-items: center;
+	position: relative;
+	width: 400px;
+}
+
+.warning {
+	border-color: @orange/0.3;
+	background-color: @orange/0.03;
+	box-shadow: 8px 8px 8px @orange/0.05;
+}
+
+.stripe-orange {
+	left: 0px;
+	width: 3px;
+	background-color: Red;
+	height: 100%;
+	border-radius: 6px 0px 0px 6px;
+	position: absolute;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	padding: 8px;
+}
+
+.icon {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: @blue;
+	padding: 8px;
+	width: 22px;
+	height: 22px;
+}
+
+.header {
+	font-size: 18px;
+	font-weight: bold;
+	padding: 6px;
+}
+
+.text {
+	font-family: 'Segoe UI';
+	font-size: 14px;
+	color: #606060;
+	padding: 0px 0px 6px 6px;
+}
+
+.close-button {
+	padding: 8px;
+	width: 22px;
+	height: 22px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+</value>
+  </data>
+  <data name="htmlMesageError.Template" xml:space="preserve">
+    <value>&lt;div class="toast-notification warning"&gt;
+        &lt;div class="stripe-orange"&gt;&lt;/div&gt;
+        &lt;img class="icon" src="Error"&gt;
+        &lt;div class="content"&gt;
+            &lt;div class="text header"&gt;Cảnh báo&lt;/div&gt;
+            &lt;div class="text"&gt;Vui lòng nhập đúng tài khoản và mật khẩu!&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;img class="close-button" src="Delete"&gt;
+    &lt;/div&gt;</value>
+  </data>
   <metadata name="alertControlSucces.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>529, 17</value>
   </metadata>
@@ -7083,6 +7180,170 @@
 		&lt;div id="okButton" class="ok-button"&gt;OK&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;</value>
+  </data>
+  <metadata name="alertControlError.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>712, 17</value>
+  </metadata>
+  <data name="alertControlError.HtmlTemplate.Styles" xml:space="preserve">
+    <value>.toast-notification {
+	display: flex;
+	flex-direction: row;
+	border-radius: 6px;
+	border-style: solid;
+	border-width: 1px 1px 1px 0px;
+	margin: 12px;
+	justify-content: space-around;
+	align-items: center;
+	position: relative;
+	width: 400px;
+}
+
+.warning {
+	border-color: @orange/0.3;
+	background-color: rgb(255, 253, 248);
+	box-shadow: 8px 8px 8px @orange/0.05;
+}
+
+.stripe-orange {
+	left: 0px;
+	width: 3px;
+	background-color: Red;
+	height: 100%;
+	border-radius: 6px 0px 0px 6px;
+	position: absolute;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	padding: 8px;
+}
+
+.icon {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: @blue;
+	padding: 8px;
+	width: 22px;
+	height: 22px;
+}
+
+.header {
+	font-size: 18px;
+	font-weight: bold;
+	padding: 6px;
+}
+
+.text {
+	font-family: 'Segoe UI';
+	font-size: 14px;
+	color: #606060;
+	padding: 0px 0px 6px 6px;
+}
+
+.close-button {
+	padding: 8px;
+	width: 22px;
+	height: 22px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+</value>
+  </data>
+  <data name="alertControlError.HtmlTemplate.Template" xml:space="preserve">
+    <value>&lt;div class="toast-notification warning"&gt;
+        &lt;div class="stripe-orange"&gt;&lt;/div&gt;
+        &lt;img class="icon" src="info_32x32.png"&gt;
+        &lt;div class="content"&gt;
+            &lt;div class="text header"&gt;Cảnh báo&lt;/div&gt;
+            &lt;div class="text"&gt;Mã sinh viên hoặc mật khẩu của bạn không chính sác!&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;img id="delete" class="close-button" src="cancel_32x32.png"&gt;
+    &lt;/div&gt;</value>
+  </data>
+  <metadata name="alertControlErrorNull.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>883, 17</value>
+  </metadata>
+  <data name="alertControl1.HtmlTemplate.Styles" xml:space="preserve">
+    <value>.toast-notification {
+	display: flex;
+	flex-direction: row;
+	border-radius: 6px;
+	border-style: solid;
+	border-width: 1px 1px 1px 0px;
+	margin: 12px;
+	justify-content: space-around;
+	align-items: center;
+	position: relative;
+	width: 400px;
+}
+
+.warning {
+	border-color: @orange/0.3;
+	background-color: rgb(255, 253, 248);
+	box-shadow: 8px 8px 8px @orange/0.05;
+}
+
+.stripe-orange {
+	left: 0px;
+	width: 3px;
+	background-color: Red;
+	height: 100%;
+	border-radius: 6px 0px 0px 6px;
+	position: absolute;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	padding: 8px;
+}
+
+.icon {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: @blue;
+	padding: 8px;
+	width: 22px;
+	height: 22px;
+}
+
+.header {
+	font-size: 18px;
+	font-weight: bold;
+	padding: 6px;
+}
+
+.text {
+	font-family: 'Segoe UI';
+	font-size: 14px;
+	color: #606060;
+	padding: 0px 0px 6px 6px;
+}
+
+.close-button {
+	padding: 8px;
+	width: 22px;
+	height: 22px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+</value>
+  </data>
+  <data name="alertControl1.HtmlTemplate.Template" xml:space="preserve">
+    <value>&lt;div class="toast-notification warning"&gt;
+        &lt;div class="stripe-orange"&gt;&lt;/div&gt;
+        &lt;img class="icon" src="info_32x32.png"&gt;
+        &lt;div class="content"&gt;
+            &lt;div class="text header"&gt;Cảnh báo&lt;/div&gt;
+            &lt;div class="text"&gt;Vui lòng nhập đầy đủ mã sinh viên và mật khẩu!&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;img id="delete" class="close-button" src="cancel_32x32.png"&gt;
+    &lt;/div&gt;</value>
   </data>
   <data name="frmLogin.HtmlTemplate.Styles" xml:space="preserve">
     <value>body{

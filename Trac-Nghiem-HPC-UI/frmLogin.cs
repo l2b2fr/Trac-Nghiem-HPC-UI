@@ -1,5 +1,7 @@
 ﻿using DevExpress.XtraBars.Alerter;
 using DevExpress.XtraEditors;
+using DevExpress.XtraEditors.Mask.Design;
+using DevExpress.XtraPrinting.Native.WebClientUIControl;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,6 +12,16 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Newtonsoft.Json.Linq;
+using System.Text.Json;
+using System.Text.Json.Serialization;
+using Trac_Nghiem_HPC_UI.Http;
+using System.Net.Http;
+using System.IO;
+using System.Net;
+using System.Text.Json.Nodes;
+using Newtonsoft.Json;
+using System.Net.Http.Headers;
 
 namespace Trac_Nghiem_HPC_UI
 {
@@ -41,9 +53,86 @@ namespace Trac_Nghiem_HPC_UI
             if (e.ElementId == "point _green")
             {
                 this.WindowState = FormWindowState.Minimized;
+                //LoadData();
+            }
+        }
+        private void btnDangNhap_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(ipMaSinhVien.Text) || string.IsNullOrWhiteSpace(ipMatKhau.Text))
+            {
+                alertControlErrorNull.Show(this);
+                ipMaSinhVien.Focus();
+            }
+            else
+            {
+                bool check = SendPostRequestLogin(ipMaSinhVien.Text, ipMatKhau.Text);
+                if (check)
+                {
+                    this.Hide();
+                    new frmLoading().Show();
+                }
+                else
+                {
+                    alertControlError.Show(this);
+                    ipMaSinhVien.Clear();
+                    ipMatKhau.Clear();
+                    ipMaSinhVien.Focus();
+                }
             }
         }
 
+        private bool SendPostRequestLogin(string maSV, string matKhau)
+        {
+            string url = Program.urlServer + "/api/sinhvien/login";
+            var request = (HttpWebRequest)WebRequest.Create(url);
+            request.Method = "POST";
+            request.ContentType = "application/json";
+
+            // Tạo đối tượng JSON
+            var json = new JObject
+                {
+                    { "maSV", maSV },
+                    { "matKhau", matKhau }
+                };
+            // Chuyển đổi đối tượng JSON thành chuỗi
+            var postData = json.ToString();
+            var data = Encoding.UTF8.GetBytes(postData);
+
+            using (var stream = request.GetRequestStream())
+            {
+                stream.Write(data, 0, data.Length);
+            }
+
+            try
+            {
+                using (var response = (HttpWebResponse)request.GetResponse())
+                {
+                    if (response.StatusCode == HttpStatusCode.OK)
+                    {
+                        using (var streamReader = new StreamReader(response.GetResponseStream()))
+                        {
+                            var result = streamReader.ReadToEnd();
+                            if (!string.IsNullOrEmpty(result))
+                            {
+                                var sinhVienResponse = JsonConvert.DeserializeObject<SinhVienResponse>(result);
+                                Program.sinhVienResponse = sinhVienResponse;
+                                return true;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Error: {response.StatusCode}");
+                    }
+                }
+            }
+            catch (WebException ex)
+            {
+                Console.WriteLine($"Error: {ex.Status}");
+            }
+
+            return false;
+        }
         private void btnThoat_Click(object sender, EventArgs e)
         {
             var arg = new XtraMessageBoxArgs();
@@ -56,13 +145,6 @@ namespace Trac_Nghiem_HPC_UI
             {
                 Application.Exit();
             }
-        }
-
-        private void btnDangNhap_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            frmLoading frmLoading = new frmLoading();
-            frmLoading.Show();
         }
 
         private void alertControlSucces_HtmlElementMouseClick(object sender, DevExpress.XtraBars.Alerter.AlertHtmlElementMouseEventArgs e)
@@ -79,6 +161,47 @@ namespace Trac_Nghiem_HPC_UI
             else
             {
                 ipMatKhau.Properties.PasswordChar = '*';
+            }
+        }
+
+        private void alertControlError_HtmlElementMouseClick(object sender, AlertHtmlElementMouseEventArgs e)
+        {
+            if (e.ElementId == "delete")
+            {
+                e.HtmlPopup.Close();
+            }
+        }
+
+        private void alertControlErrorNull_HtmlElementMouseClick(object sender, AlertHtmlElementMouseEventArgs e)
+        {
+            if (e.ElementId == "delete")
+            {
+                e.HtmlPopup.Close();
+            }
+        }
+        private async void LoadData()
+        {
+            using (HttpClient client = new HttpClient())
+            {
+                string url = "http://127.0.0.1:8000/api/kythi/1/cathi";
+                string token = "20|BiAHDiz55zV7KEdMwxFwHiMMrqW0d5CRUbj81xQBbd1195d3";
+
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("copecute", token);
+
+                var response = await client.GetAsync(url);
+                if (response.IsSuccessStatusCode)
+                {
+                    string responseBody = await response.Content.ReadAsStringAsync();
+                    var caThiList = JsonConvert.DeserializeObject<List<CaThi>>(responseBody);
+                    foreach (var caThi in caThiList)
+                    {
+                        MessageBox.Show($"ID: {caThi.Id}, TenCa: {caThi.TenCa}, ThoiGianBatDau: {caThi.ThoiGianBatDau}, ThoiGianKetThuc: {caThi.ThoiGianKetThuc}");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show($"Request failed: {response.StatusCode}");
+                }
             }
         }
     }
