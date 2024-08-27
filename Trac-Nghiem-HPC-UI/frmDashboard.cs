@@ -18,6 +18,7 @@ namespace Trac_Nghiem_HPC_UI
     {
         private static ucDashboard ucDashboard;
         private static ucMonThi ucMonThi;
+        private static ucLichSuThi ucLichSuThi;
         public frmDashboard()
         {
             InitializeComponent();
@@ -109,6 +110,19 @@ namespace Trac_Nghiem_HPC_UI
         private void accordionControlLichSuThi_Click(object sender, EventArgs e)
         {
             loadMau(accordionControlLichSuThi);
+            if (ucLichSuThi == null)
+            {
+                ucLichSuThi = new ucLichSuThi();
+                ucLichSuThi.Dock = DockStyle.Fill;
+                xtraUserControlMain.Controls.Clear();
+                xtraUserControlMain.Controls.Add(ucLichSuThi);
+            }
+            else
+            {
+                ucLichSuThi.Dock = DockStyle.Fill;
+                xtraUserControlMain.Controls.Clear();
+                xtraUserControlMain.Controls.Add(ucLichSuThi);
+            }
         }
 
         private void accordionControlThongTin_Click(object sender, EventArgs e)

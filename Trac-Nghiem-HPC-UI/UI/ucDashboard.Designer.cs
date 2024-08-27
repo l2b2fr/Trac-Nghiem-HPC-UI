@@ -50,8 +50,8 @@
             // 
             this.htmlContentControlProfile.Cursor = System.Windows.Forms.Cursors.Default;
             this.htmlContentControlProfile.HtmlImages = this.imageCollection1;
-            this.htmlContentControlProfile.HtmlTemplate.Styles = resources.GetString("htmlContentControl1.HtmlTemplate.Styles");
-            this.htmlContentControlProfile.HtmlTemplate.Template = resources.GetString("htmlContentControl1.HtmlTemplate.Template");
+            this.htmlContentControlProfile.HtmlTemplate.Styles = resources.GetString("htmlContentControlProfile.HtmlTemplate.Styles");
+            this.htmlContentControlProfile.HtmlTemplate.Template = resources.GetString("htmlContentControlProfile.HtmlTemplate.Template");
             this.htmlContentControlProfile.Location = new System.Drawing.Point(20, 20);
             this.htmlContentControlProfile.Margin = new System.Windows.Forms.Padding(20, 20, 0, 20);
             this.htmlContentControlProfile.Name = "htmlContentControlProfile";
@@ -71,6 +71,7 @@
             this.imageCollection1.Images.SetKeyName(5, "information.png");
             this.imageCollection1.Images.SetKeyName(6, "user-setting.png");
             this.imageCollection1.Images.SetKeyName(7, "logout1.png");
+            this.imageCollection1.Images.SetKeyName(8, "anh-chan-dung-con-gai-toc-ngan_082837328.jpg");
             // 
             // imageSlider1
             // 
@@ -144,12 +145,12 @@
             this.labelControl1.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(88)))), ((int)(((byte)(163)))));
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Appearance.Options.UseForeColor = true;
-            this.labelControl1.Location = new System.Drawing.Point(341, 451);
+            this.labelControl1.Location = new System.Drawing.Point(408, 452);
             this.labelControl1.Margin = new System.Windows.Forms.Padding(4);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(365, 39);
+            this.labelControl1.Size = new System.Drawing.Size(232, 39);
             this.labelControl1.TabIndex = 4;
-            this.labelControl1.Text = "Lịch thi của các môn học";
+            this.labelControl1.Text = "Lịch thi của bạn";
             // 
             // ucDashboard
             // 

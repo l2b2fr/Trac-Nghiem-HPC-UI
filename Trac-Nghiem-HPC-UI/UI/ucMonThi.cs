@@ -28,17 +28,69 @@ namespace Trac_Nghiem_HPC_UI.UI
         }
         private void loadMonThi()
         {
-            monThiList = new List<MonThi>();
-            for (int i = 0; i < 10; i++)
-            {
-                MonThi monThi = new MonThi
+            monThiList = new List<MonThi>
                 {
-                    TenMonThi = "Tên Môn Thi " + i,
-                    ChiTietMonThi = "Chi Tiết Môn Thi " + i,
-                    Photo = imageCollection1.Images[i]
+                    new MonThi
+                    {
+                        TenMonThi = "Lập Trình C#",
+                        ChiTietMonThi = "Khóa học về lập trình ứng dụng desktop và web bằng C#. Sinh viên sẽ học cách sử dụng ngôn ngữ lập trình C# để phát triển các ứng dụng thực tế, bao gồm cả giao diện người dùng và xử lý dữ liệu.",
+                        Photo = imageCollection1.Images[0]
+                    },
+                    new MonThi
+                    {
+                        TenMonThi = "Cơ Sở Dữ Liệu",
+                        ChiTietMonThi = "Nghiên cứu về quản lý và thiết kế cơ sở dữ liệu. Khóa học này sẽ cung cấp cho sinh viên kiến thức về các hệ quản trị cơ sở dữ liệu, ngôn ngữ truy vấn SQL và các kỹ thuật tối ưu hóa hiệu suất.",
+                        Photo = imageCollection1.Images[1]
+                    },
+                    new MonThi
+                    {
+                        TenMonThi = "Mạng Máy Tính",
+                        ChiTietMonThi = "Khóa học về cấu trúc và quản lý mạng máy tính. Sinh viên sẽ tìm hiểu về các giao thức mạng, thiết bị mạng, và cách thiết lập và bảo trì một mạng máy tính hiệu quả.",
+                        Photo = imageCollection1.Images[2]
+                    },
+                    new MonThi
+                    {
+                        TenMonThi = "An Ninh Mạng",
+                        ChiTietMonThi = "Nghiên cứu về bảo mật thông tin và an ninh mạng. Khóa học này sẽ giúp sinh viên hiểu các mối đe dọa an ninh, các biện pháp bảo vệ dữ liệu và cách phát hiện và ứng phó với các cuộc tấn công mạng.",
+                        Photo = imageCollection1.Images[3]
+                    },
+                    new MonThi
+                    {
+                        TenMonThi = "Phát Triển Web",
+                        ChiTietMonThi = "Khóa học về thiết kế và phát triển website. Sinh viên sẽ học cách sử dụng HTML, CSS, JavaScript và các framework phổ biến để tạo ra các trang web tương tác và thân thiện với người dùng.",
+                        Photo = imageCollection1.Images[4]
+                    },
+                    new MonThi
+                    {
+                        TenMonThi = "Trí Tuệ Nhân Tạo",
+                        ChiTietMonThi = "Khóa học về các thuật toán và ứng dụng trí tuệ nhân tạo. Sinh viên sẽ tìm hiểu về machine learning, deep learning và cách áp dụng các công nghệ này để giải quyết các bài toán thực tế.",
+                        Photo = imageCollection1.Images[5]
+                    },
+                    new MonThi
+                    {
+                        TenMonThi = "Khoa Học Dữ Liệu",
+                        ChiTietMonThi = "Nghiên cứu về phân tích và xử lý dữ liệu lớn. Khóa học này sẽ cung cấp cho sinh viên các kỹ thuật thu thập, phân tích và trực quan hóa dữ liệu để hỗ trợ ra quyết định.",
+                        Photo = imageCollection1.Images[6]
+                    },
+                    new MonThi
+                    {
+                        TenMonThi = "Lập Trình Di Động",
+                        ChiTietMonThi = "Khóa học về phát triển ứng dụng di động trên Android và iOS. Sinh viên sẽ học cách sử dụng các ngôn ngữ lập trình như Java, Kotlin và Swift để xây dựng ứng dụng di động chất lượng cao.",
+                        Photo = imageCollection1.Images[7]
+                    },
+                    new MonThi
+                    {
+                        TenMonThi = "Công Nghệ Phần Mềm",
+                        ChiTietMonThi = "Nghiên cứu về quy trình phát triển phần mềm và quản lý dự án. Khóa học này sẽ giúp sinh viên hiểu các phương pháp phát triển phần mềm, từ lập kế hoạch đến triển khai và bảo trì.",
+                        Photo = imageCollection1.Images[8]
+                    },
+                    new MonThi
+                    {
+                        TenMonThi = "Hệ Thống Thông Tin",
+                        ChiTietMonThi = "Khóa học về thiết kế và quản lý hệ thống thông tin. Sinh viên sẽ tìm hiểu về cách xây dựng và duy trì các hệ thống thông tin để hỗ trợ hoạt động kinh doanh và ra quyết định.",
+                        Photo = imageCollection1.Images[9]
+                    }
                 };
-                monThiList.Add(monThi);
-            }
             gridControl1.DataSource = monThiList;
             htmlContentControl1.DataContext = monThiList[0];
         }
@@ -89,7 +141,7 @@ namespace Trac_Nghiem_HPC_UI.UI
 
         private void tileView1_HtmlElementMouseClick(object sender, DevExpress.XtraGrid.Views.Tile.TileViewHtmlElementMouseEventArgs e)
         {
-            if(e.ElementId == "detailButton")
+            if (e.ElementId == "detailButton")
             {
                 var gridControl = tileView1.GridControl;
 
@@ -182,7 +234,7 @@ namespace Trac_Nghiem_HPC_UI.UI
 
         private void tileView2_HtmlElementMouseClick(object sender, DevExpress.XtraGrid.Views.Tile.TileViewHtmlElementMouseEventArgs e)
         {
-            if(e.ElementId == "kiemTraButton")
+            if (e.ElementId == "kiemTraButton")
             {
                 var selectedIndex = e.RowHandle;
                 if (gridControl2.DataSource is List<BaiKiemTra> dataList)

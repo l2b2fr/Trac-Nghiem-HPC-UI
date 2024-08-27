@@ -111,3 +111,4 @@ C:\Users\LEMINHNAM\Desktop\Trac-Nghiem-HPC-UI\Trac-Nghiem-HPC-UI\bin\Debug\Syste
 C:\Users\LEMINHNAM\Desktop\Trac-Nghiem-HPC-UI\Trac-Nghiem-HPC-UI\bin\Debug\System.ValueTuple.xml
 C:\Users\LEMINHNAM\Desktop\Trac-Nghiem-HPC-UI\Trac-Nghiem-HPC-UI\bin\Debug\Newtonsoft.Json.dll
 C:\Users\LEMINHNAM\Desktop\Trac-Nghiem-HPC-UI\Trac-Nghiem-HPC-UI\bin\Debug\Newtonsoft.Json.xml
+C:\Users\LEMINHNAM\Desktop\Trac-Nghiem-HPC-UI\Trac-Nghiem-HPC-UI\obj\Debug\Trac_Nghiem_HPC_UI.UI.ucLichSuThi.resources

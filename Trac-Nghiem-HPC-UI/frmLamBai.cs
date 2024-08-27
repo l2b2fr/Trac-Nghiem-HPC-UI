@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraEditors;
+﻿using DevExpress.Utils.Extensions;
+using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Trac_Nghiem_HPC_UI.DemoData;
+using Trac_Nghiem_HPC_UI.Http;
 
 namespace Trac_Nghiem_HPC_UI
 {
@@ -25,10 +27,17 @@ namespace Trac_Nghiem_HPC_UI
         private void frmLamBai_Load(object sender, EventArgs e)
         {
             loadCauHoi();
+            loadDetail();
             stepProgressBarItem1.Progress = 100;
 
             // Bắt đầu Timer
             timer1.Start();
+        }
+        private void loadDetail()
+        {
+            List<SinhVienResponse> list = new List<SinhVienResponse>();
+            list.Add(Program.sinhVienResponse);
+            htmlContentControlHeader.DataContext = Program.sinhVienResponse;
         }
         private void loadCauHoi()
         {
@@ -57,7 +66,7 @@ namespace Trac_Nghiem_HPC_UI
                 stepProgressBarItem3.Progress = progress;
             }
             // Xử lý khi thời gian nhỏ hơn hoặc bằng thời gian tổng
-            else if (demgiay < thoigian-1)
+            else if (demgiay < thoigian - 1)
             {
                 int progress = (int)(((demgiay - thoigian / 2) / (float)(thoigian / 2)) * 100);
                 stepProgressBarItem4.Progress = progress;
@@ -77,6 +86,23 @@ namespace Trac_Nghiem_HPC_UI
             int remainingSeconds = thoigian - demgiay;
             TimeSpan time = TimeSpan.FromSeconds(remainingSeconds);
             labelControl1.Text = $"{time.Minutes:D2}:{time.Seconds:D2}";
+        }
+
+        private void htmlContentControl2_ElementMouseClick(object sender, DevExpress.Utils.Html.DxHtmlElementMouseEventArgs e)
+        {
+            if (e.ElementId == "nopBaiButon")
+            {
+                var arg = new XtraMessageBoxArgs();
+                arg.HtmlTemplate.Assign(htmlMesage);
+                arg.Caption = "Nộp bài thi";
+                arg.Text = "Bạn có thực sự muốn nộp bài?";
+                arg.DefaultButtonIndex = 0;
+                var result = XtraMessageBox.Show(arg);
+                if (result == DialogResult.Yes)
+                {
+                    this.Close();
+                }
+            }
         }
     }
 }

@@ -98,37 +98,44 @@ namespace Trac_Nghiem_HPC_UI
             var postData = json.ToString();
             var data = Encoding.UTF8.GetBytes(postData);
 
-            using (var stream = request.GetRequestStream())
-            {
-                stream.Write(data, 0, data.Length);
-            }
-
             try
             {
-                using (var response = (HttpWebResponse)request.GetResponse())
+                using (var stream = request.GetRequestStream())
                 {
-                    if (response.StatusCode == HttpStatusCode.OK)
+                    stream.Write(data, 0, data.Length);
+                }
+
+                try
+                {
+                    using (var response = (HttpWebResponse)request.GetResponse())
                     {
-                        using (var streamReader = new StreamReader(response.GetResponseStream()))
+                        if (response.StatusCode == HttpStatusCode.OK)
                         {
-                            var result = streamReader.ReadToEnd();
-                            if (!string.IsNullOrEmpty(result))
+                            using (var streamReader = new StreamReader(response.GetResponseStream()))
                             {
-                                var sinhVienResponse = JsonConvert.DeserializeObject<SinhVienResponse>(result);
-                                Program.sinhVienResponse = sinhVienResponse;
-                                return true;
+                                var result = streamReader.ReadToEnd();
+                                if (!string.IsNullOrEmpty(result))
+                                {
+                                    var sinhVienResponse = JsonConvert.DeserializeObject<SinhVienResponse>(result);
+                                    Program.sinhVienResponse = sinhVienResponse;
+                                    return true;
+                                }
                             }
                         }
-                    }
-                    else
-                    {
-                        Console.WriteLine($"Error: {response.StatusCode}");
+                        else
+                        {
+                            Console.WriteLine($"Error: {response.StatusCode}");
+                        }
                     }
                 }
+                catch (WebException ex)
+                {
+                    Console.WriteLine($"Error: {ex.Status}");
+                }
             }
-            catch (WebException ex)
+            catch
             {
-                Console.WriteLine($"Error: {ex.Status}");
+                MessageBox.Show("Không thể kết nối với Server!");
             }
 
             return false;

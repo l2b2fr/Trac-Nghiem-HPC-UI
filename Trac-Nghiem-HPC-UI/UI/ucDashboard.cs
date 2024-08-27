@@ -1,11 +1,14 @@
 ﻿using DevExpress.XtraCharts;
 using DevExpress.XtraEditors;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Http.Headers;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -26,6 +29,7 @@ namespace Trac_Nghiem_HPC_UI.UI
             LoadProfile();
             LoadData();
             LoadDataChart();
+            //loadLichThi();
         }
 
         private void LoadProfile()
@@ -58,6 +62,40 @@ namespace Trac_Nghiem_HPC_UI.UI
             series.ToolTipEnabled = DevExpress.Utils.DefaultBoolean.True;
             series.ToolTipPointPattern = "{A}: {V:n0} điểm";
             chartControl1.Series.Add(series);
+        }
+
+        private async void loadLichThi()
+        {
+            using (var client = new HttpClient())
+            {
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("copecute", Program.sinhVienResponse.Token);
+
+                try
+                {
+                    var response = await client.GetAsync(Program.urlServer + "/api/kythi");
+                    response.EnsureSuccessStatusCode();
+                    var jsonString = await response.Content.ReadAsStringAsync();
+                    var kyThis = JsonConvert.DeserializeObject<List<KyThi>>(jsonString);
+
+                    foreach (var kyThi in kyThis)
+                    {
+                        Console.WriteLine($"Tên kỳ thi: {kyThi.TenKyThi}");
+                        Console.WriteLine($"Ngày bắt đầu: {kyThi.NgayBatDau}");
+                        Console.WriteLine($"Ngày kết thúc: {kyThi.NgayKetThuc}");
+
+                        foreach (var ca in kyThi.Ca_This)
+                        {
+                            Console.WriteLine($"  Tên ca: {ca.TenCa}");
+                            Console.WriteLine($"  Thời gian bắt đầu: {ca.ThoiGianBatDau}");
+                            Console.WriteLine($"  Thời gian kết thúc: {ca.ThoiGianKetThuc}");
+                        }
+                    }
+                }
+                catch (HttpRequestException e)
+                {
+                    Console.WriteLine($"Error fetching data: {e.Message}");
+                }
+            }
         }
     }
 }

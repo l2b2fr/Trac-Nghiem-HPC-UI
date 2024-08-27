@@ -150,6 +150,7 @@
   <ItemGroup>
     <Compile Include="DemoData\BaiKiemTra.cs" />
     <Compile Include="DemoData\CauHoi.cs" />
+    <Compile Include="DemoData\Exam.cs" />
     <Compile Include="DemoData\Khoa.cs" />
     <Compile Include="DemoData\MonThi.cs" />
     <Compile Include="frmDashboard.cs">
@@ -177,6 +178,7 @@
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Http\CaThi.cs" />
+    <Compile Include="Http\KyThi.cs" />
     <Compile Include="Http\SinhVienResponse.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -205,6 +207,9 @@
     </Compile>
     <EmbeddedResource Include="UI\ucDashboard.resx">
       <DependentUpon>ucDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ucLichSuThi.resx">
+      <DependentUpon>ucLichSuThi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\ucMonThi.resx">
       <DependentUpon>ucMonThi.cs</DependentUpon>
@@ -239,6 +244,12 @@
     </Compile>
     <Compile Include="UI\ucDashboard.Designer.cs">
       <DependentUpon>ucDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ucLichSuThi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ucLichSuThi.Designer.cs">
+      <DependentUpon>ucLichSuThi.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\ucMonThi.cs">
       <SubType>UserControl</SubType>

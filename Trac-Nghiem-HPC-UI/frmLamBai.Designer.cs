@@ -37,7 +37,7 @@
             this.htmlContentControl2 = new DevExpress.XtraEditors.HtmlContentControl();
             this.gridControlDanhSachCauHoi = new DevExpress.XtraGrid.GridControl();
             this.tileView1 = new DevExpress.XtraGrid.Views.Tile.TileView();
-            this.htmlContentControl1 = new DevExpress.XtraEditors.HtmlContentControl();
+            this.htmlContentControlHeader = new DevExpress.XtraEditors.HtmlContentControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.stepProgressBarThoiGian = new DevExpress.XtraEditors.StepProgressBar();
             this.stepProgressBarItem1 = new DevExpress.XtraEditors.StepProgressBarItem();
@@ -45,6 +45,9 @@
             this.stepProgressBarItem3 = new DevExpress.XtraEditors.StepProgressBarItem();
             this.stepProgressBarItem4 = new DevExpress.XtraEditors.StepProgressBarItem();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.htmlTemplateCollectionFrmLamBai = new DevExpress.Utils.Html.HtmlTemplateCollection();
+            this.htmlMesage = new DevExpress.Utils.Html.HtmlTemplate();
+            this.htmlMesageError = new DevExpress.Utils.Html.HtmlTemplate();
             this.directXFormContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.htmlContentControl3)).BeginInit();
             this.htmlContentControl3.SuspendLayout();
@@ -54,8 +57,8 @@
             this.htmlContentControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlDanhSachCauHoi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tileView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.htmlContentControl1)).BeginInit();
-            this.htmlContentControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.htmlContentControlHeader)).BeginInit();
+            this.htmlContentControlHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.stepProgressBarThoiGian)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,7 +67,7 @@
             this.directXFormContainerControl1.BackColor = System.Drawing.Color.White;
             this.directXFormContainerControl1.Controls.Add(this.htmlContentControl3);
             this.directXFormContainerControl1.Controls.Add(this.htmlContentControl2);
-            this.directXFormContainerControl1.Controls.Add(this.htmlContentControl1);
+            this.directXFormContainerControl1.Controls.Add(this.htmlContentControlHeader);
             this.directXFormContainerControl1.Location = new System.Drawing.Point(0, 0);
             this.directXFormContainerControl1.Name = "directXFormContainerControl1";
             this.directXFormContainerControl1.Size = new System.Drawing.Size(1900, 1056);
@@ -87,7 +90,7 @@
             // 
             this.radioGroupDapAn.Location = new System.Drawing.Point(24, 462);
             this.radioGroupDapAn.Name = "radioGroupDapAn";
-            this.radioGroupDapAn.Properties.Appearance.Font = new System.Drawing.Font("Roboto", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioGroupDapAn.Properties.Appearance.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioGroupDapAn.Properties.Appearance.Options.UseFont = true;
             this.radioGroupDapAn.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
             new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "A. View"),
@@ -106,6 +109,8 @@
             this.imageCollection1.Images.SetKeyName(1, "hourglass.png");
             this.imageCollection1.Images.SetKeyName(2, "8.png");
             this.imageCollection1.Images.SetKeyName(3, "mo-hinh-mvc-trong-java-la-gi-04.jpg");
+            this.imageCollection1.Images.SetKeyName(4, "anh-chan-dung-con-gai-toc-ngan_082837328.jpg");
+            this.imageCollection1.Images.SetKeyName(5, "cancel_32x32.png");
             // 
             // htmlContentControl2
             // 
@@ -120,6 +125,7 @@
             this.htmlContentControl2.Name = "htmlContentControl2";
             this.htmlContentControl2.Size = new System.Drawing.Size(431, 899);
             this.htmlContentControl2.TabIndex = 1;
+            this.htmlContentControl2.ElementMouseClick += new DevExpress.Utils.Html.DxHtmlElementMouseEventHandler(this.htmlContentControl2_ElementMouseClick);
             // 
             // gridControlDanhSachCauHoi
             // 
@@ -151,21 +157,21 @@
             this.tileView1.TileHtmlTemplate.Template = "<div id=\"kiemTraButton\" class=\"button\" onclick=\"onDetailButtonClick\">\r\n\t$Câu: {_i" +
     "d}\r\n</div>";
             // 
-            // htmlContentControl1
+            // htmlContentControlHeader
             // 
-            this.htmlContentControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.htmlContentControlHeader.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.htmlContentControl1.Controls.Add(this.labelControl1);
-            this.htmlContentControl1.Controls.Add(this.stepProgressBarThoiGian);
-            this.htmlContentControl1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.htmlContentControl1.HtmlImages = this.imageCollection1;
-            this.htmlContentControl1.HtmlTemplate.Styles = resources.GetString("htmlContentControl1.HtmlTemplate.Styles");
-            this.htmlContentControl1.HtmlTemplate.Template = resources.GetString("htmlContentControl1.HtmlTemplate.Template");
-            this.htmlContentControl1.Location = new System.Drawing.Point(0, 0);
-            this.htmlContentControl1.Margin = new System.Windows.Forms.Padding(20);
-            this.htmlContentControl1.Name = "htmlContentControl1";
-            this.htmlContentControl1.Size = new System.Drawing.Size(1900, 169);
-            this.htmlContentControl1.TabIndex = 0;
+            this.htmlContentControlHeader.Controls.Add(this.labelControl1);
+            this.htmlContentControlHeader.Controls.Add(this.stepProgressBarThoiGian);
+            this.htmlContentControlHeader.Cursor = System.Windows.Forms.Cursors.Default;
+            this.htmlContentControlHeader.HtmlImages = this.imageCollection1;
+            this.htmlContentControlHeader.HtmlTemplate.Styles = resources.GetString("htmlContentControl1.HtmlTemplate.Styles");
+            this.htmlContentControlHeader.HtmlTemplate.Template = resources.GetString("htmlContentControl1.HtmlTemplate.Template");
+            this.htmlContentControlHeader.Location = new System.Drawing.Point(0, 0);
+            this.htmlContentControlHeader.Margin = new System.Windows.Forms.Padding(20);
+            this.htmlContentControlHeader.Name = "htmlContentControlHeader";
+            this.htmlContentControlHeader.Size = new System.Drawing.Size(1900, 169);
+            this.htmlContentControlHeader.TabIndex = 0;
             // 
             // labelControl1
             // 
@@ -185,7 +191,7 @@
             this.stepProgressBarThoiGian.Appearance.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.stepProgressBarThoiGian.Appearance.Options.UseBackColor = true;
             this.stepProgressBarThoiGian.Appearance.Options.UseFont = true;
-            this.stepProgressBarThoiGian.Appearances.CommonActiveColor = System.Drawing.Color.Blue;
+            this.stepProgressBarThoiGian.Appearances.CommonActiveColor = System.Drawing.Color.DeepSkyBlue;
             this.stepProgressBarThoiGian.ConnectorLineThickness = 5;
             this.stepProgressBarThoiGian.ContentAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.stepProgressBarThoiGian.Cursor = System.Windows.Forms.Cursors.Default;
@@ -259,6 +265,24 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // htmlTemplateCollectionFrmLamBai
+            // 
+            this.htmlTemplateCollectionFrmLamBai.AddRange(new DevExpress.Utils.Html.HtmlTemplate[] {
+            this.htmlMesage,
+            this.htmlMesageError});
+            // 
+            // htmlMesage
+            // 
+            this.htmlMesage.Name = "htmlMesage";
+            this.htmlMesage.Styles = resources.GetString("htmlMesage.Styles");
+            this.htmlMesage.Template = resources.GetString("htmlMesage.Template");
+            // 
+            // htmlMesageError
+            // 
+            this.htmlMesageError.Name = "htmlMesageError";
+            this.htmlMesageError.Styles = resources.GetString("htmlMesageError.Styles");
+            this.htmlMesageError.Template = resources.GetString("htmlMesageError.Template");
+            // 
             // frmLamBai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -281,9 +305,9 @@
             this.htmlContentControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControlDanhSachCauHoi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tileView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.htmlContentControl1)).EndInit();
-            this.htmlContentControl1.ResumeLayout(false);
-            this.htmlContentControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.htmlContentControlHeader)).EndInit();
+            this.htmlContentControlHeader.ResumeLayout(false);
+            this.htmlContentControlHeader.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.stepProgressBarThoiGian)).EndInit();
             this.ResumeLayout(false);
 
@@ -292,7 +316,7 @@
         #endregion
 
         private DevExpress.XtraEditors.DirectXFormContainerControl directXFormContainerControl1;
-        private DevExpress.XtraEditors.HtmlContentControl htmlContentControl1;
+        private DevExpress.XtraEditors.HtmlContentControl htmlContentControlHeader;
         private DevExpress.XtraEditors.HtmlContentControl htmlContentControl3;
         private DevExpress.XtraEditors.HtmlContentControl htmlContentControl2;
         private DevExpress.Utils.ImageCollection imageCollection1;
@@ -306,5 +330,8 @@
         private DevExpress.XtraEditors.RadioGroup radioGroupDapAn;
         private System.Windows.Forms.Timer timer1;
         private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.Utils.Html.HtmlTemplateCollection htmlTemplateCollectionFrmLamBai;
+        private DevExpress.Utils.Html.HtmlTemplate htmlMesage;
+        private DevExpress.Utils.Html.HtmlTemplate htmlMesageError;
     }
 }

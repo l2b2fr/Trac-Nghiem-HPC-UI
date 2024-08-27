@@ -7266,7 +7266,7 @@
   <metadata name="alertControlErrorNull.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>883, 17</value>
   </metadata>
-  <data name="alertControl1.HtmlTemplate.Styles" xml:space="preserve">
+  <data name="alertControlErrorNull.HtmlTemplate.Styles" xml:space="preserve">
     <value>.toast-notification {
 	display: flex;
 	flex-direction: row;
@@ -7334,7 +7334,7 @@
 }
 </value>
   </data>
-  <data name="alertControl1.HtmlTemplate.Template" xml:space="preserve">
+  <data name="alertControlErrorNull.HtmlTemplate.Template" xml:space="preserve">
     <value>&lt;div class="toast-notification warning"&gt;
         &lt;div class="stripe-orange"&gt;&lt;/div&gt;
         &lt;img class="icon" src="info_32x32.png"&gt;

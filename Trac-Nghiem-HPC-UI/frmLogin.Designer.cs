@@ -248,8 +248,8 @@
             // alertControlErrorNull
             // 
             this.alertControlErrorNull.HtmlImages = this.imageCollectionFrmLogin;
-            this.alertControlErrorNull.HtmlTemplate.Styles = resources.GetString("alertControl1.HtmlTemplate.Styles");
-            this.alertControlErrorNull.HtmlTemplate.Template = resources.GetString("alertControl1.HtmlTemplate.Template");
+            this.alertControlErrorNull.HtmlTemplate.Styles = resources.GetString("alertControlErrorNull.HtmlTemplate.Styles");
+            this.alertControlErrorNull.HtmlTemplate.Template = resources.GetString("alertControlErrorNull.HtmlTemplate.Template");
             this.alertControlErrorNull.HtmlElementMouseClick += new DevExpress.XtraBars.Alerter.AlertHtmlElementMouseClickEventHandler(this.alertControlErrorNull_HtmlElementMouseClick);
             // 
             // frmLogin
