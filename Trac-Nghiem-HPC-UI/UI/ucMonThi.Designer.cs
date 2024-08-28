@@ -115,6 +115,8 @@
             this.imageCollection1.Images.SetKeyName(12, "education.png");
             this.imageCollection1.Images.SetKeyName(13, "group.png");
             this.imageCollection1.Images.SetKeyName(14, "human-book.png");
+            this.imageCollection1.Images.SetKeyName(15, "check.png");
+            this.imageCollection1.Images.SetKeyName(16, "logo.png");
             // 
             // htmlContentControl2
             // 

@@ -176,6 +176,12 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmNocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNocation.Designer.cs">
+      <DependentUpon>frmNocation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Http\CaThi.cs" />
     <Compile Include="Http\CauHoi.cs" />
     <Compile Include="Http\KyThi.cs" />
@@ -193,6 +199,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNocation.resx">
+      <DependentUpon>frmNocation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

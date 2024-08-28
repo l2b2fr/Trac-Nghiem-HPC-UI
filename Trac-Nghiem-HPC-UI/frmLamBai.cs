@@ -1,4 +1,5 @@
 ﻿using DevExpress.Utils.Extensions;
+using DevExpress.Utils.Helpers;
 using DevExpress.XtraEditors;
 using DevExpress.XtraEditors.Controls;
 using System;
@@ -54,6 +55,136 @@ namespace Trac_Nghiem_HPC_UI
             */
             CauHois = new List<CauHoi>
                  {
+                new CauHoi("Đây là cấu trúc mạng hình gì:",imageCollectionCauHoi.Images[0],
+                    new List<string> { "A: Ring", "B: Bus", "C: Start", "D: Tất cả đều sai" },
+                    "D"),
+
+                new CauHoi("Đây là loại mô hình gì:",imageCollectionCauHoi.Images[1],
+                    new List<string> { "A: OSI", "B: TCP/IP", "C: Tất cả đúng", "D: Tất cả đều sai" },
+                    "C"),
+
+                new CauHoi("Sơ đồ chức năng đăng nhập sau đây thuộc loại sơ đồ nào:",imageCollectionCauHoi.Images[2],
+                    new List<string> { "A: Usecase", "B: Trạng thái", "C: Tuần tự", "D: Lớp" },
+                    "A"),
+
+                new CauHoi("Các thành phần dưới đây thuộc loại sơ đồ nào:",imageCollectionCauHoi.Images[3],
+                    new List<string> { "A: Usecase", "B: Trạng thái", "C: Tuần tự", "D: Hoạt động" },
+                    "D"),
+
+                new CauHoi("Dưới đây là hình ảnh logo về một phần mềm chỉnh sửa ảnh, đó là phần mềm gì:",imageCollectionCauHoi.Images[4],
+                    new List<string> { "A: Illustrator", "B: Adobe Photoshop", "C: CorelDRAW", "D: InDesign" },
+                    "B"),
+
+                new CauHoi("Sắp xếp các thuật ngữ Hue, Saturation và Value theo đúng thứ tự bằng hình ảnh minh họa dưới đây:",imageCollectionCauHoi.Images[5],
+                    new List<string> { "A: 1-2-3", "B: 2-3-1", "C: 3-1-2", "D: Tất cả đều sai" },
+                    "C"),
+
+                new CauHoi("Dưới đây là mô hình gì:",imageCollectionCauHoi.Images[6],
+                    new List<string> { "A: RGB", "B: CMYK", "C: RYB", "D: Tất cả đều sai" },
+                    "B"),
+
+                new CauHoi("Trong SQL đây là câu lệnh giúp thực hiện tác vụ gì:",imageCollectionCauHoi.Images[7],
+                    new List<string> { "A: Thêm một bản ghi vào một bảng", "B: Xóa bản ghi trong một bảng",
+                                      "C: Chỉnh sửa bản ghi trong một bảng", "D: Tất cả đều sai" },
+                    "A"),
+
+                new CauHoi("Thẻ <a> </a> trong đoạn code trên dùng để làm gì:",imageCollectionCauHoi.Images[8],
+                    new List<string> { "A: Đặt tiêu đề cho trang",
+                                      "B: Chứa toàn bộ nội dung hiển thị của trang web, bao gồm văn bản, hình ảnh, video, liên kết",
+                                      "C: Tạo liên kết đến trang web example", "D: Tất cả đều sai" },
+                    "C"),
+
+                new CauHoi("Đoạn code phía dưới dùng để làm gì:",imageCollectionCauHoi.Images[9],
+                    new List<string> { "A: Kiểm tra số nhập vào là số chẵn hay lẻ",
+                                      "B: Kiểm tra số nhập vào có phải số nguyên hay không",
+                                      "C: Kiểm tra số nhập vào có phải số nguyên tố hay không", "D: Tất cả đều sai" },
+                    "A"),
+
+                new CauHoi("Hình ảnh minh họa dưới đây là bộ phận nào của máy tính:",imageCollectionCauHoi.Images[10],
+                    new List<string> { "A: Mainboard", "B: CPU", "C: Khe cắm Ram", "D: Tất cả đều sai" },
+                    "C"),
+
+                new CauHoi("Mô hình quản lý thư viện dưới đây thuộc loại mô hình nào:",imageCollectionCauHoi.Images[11],
+                    new List<string> { "A: Hoạt động", "B: Trạng thái", "C: Usecase", "D: Lớp" },
+                    "A"),
+
+                new CauHoi("Đây là mô hình gì:",imageCollectionCauHoi.Images[12],
+                    new List<string> { "A: Mô hình client-server", "B: Mô hình OSI", "C: Mô hình TCP/IP", "D: Tất cả đều sai" },
+                    "A"),
+
+                new CauHoi("Tầng thứ 2 trong mô hình OSI là gì:",imageCollectionCauHoi.Images[13],
+                    new List<string> { "A: Link", "B: Data-link", "C: Tất cả đều đúng", "D: Tất cả đều sai" },
+                    "B"),
+
+                new CauHoi("Lệnh SELECT dưới đây dùng để làm gì:",imageCollectionCauHoi.Images[14],
+                    new List<string> { "A: Chỉnh sửa dữ liệu từ 1 bảng", "B: In ra thông tin từ 1 bảng",
+                                      "C: Tạo 1 bảng mới", "D: Tất cả đều sai" },
+                "B"),
+                new CauHoi("Đây là cấu trúc mạng hình gì:",imageCollectionCauHoi.Images[0],
+                    new List<string> { "A: Ring", "B: Bus", "C: Start", "D: Tất cả đều sai" },
+                    "D"),
+
+                new CauHoi("Đây là loại mô hình gì:",imageCollectionCauHoi.Images[1],
+                    new List<string> { "A: OSI", "B: TCP/IP", "C: Tất cả đúng", "D: Tất cả đều sai" },
+                    "C"),
+
+                new CauHoi("Sơ đồ chức năng đăng nhập sau đây thuộc loại sơ đồ nào:",imageCollectionCauHoi.Images[2],
+                    new List<string> { "A: Usecase", "B: Trạng thái", "C: Tuần tự", "D: Lớp" },
+                    "A"),
+
+                new CauHoi("Các thành phần dưới đây thuộc loại sơ đồ nào:",imageCollectionCauHoi.Images[3],
+                    new List<string> { "A: Usecase", "B: Trạng thái", "C: Tuần tự", "D: Hoạt động" },
+                    "D"),
+
+                new CauHoi("Dưới đây là hình ảnh logo về một phần mềm chỉnh sửa ảnh, đó là phần mềm gì:",imageCollectionCauHoi.Images[4],
+                    new List<string> { "A: Illustrator", "B: Adobe Photoshop", "C: CorelDRAW", "D: InDesign" },
+                    "B"),
+
+                new CauHoi("Sắp xếp các thuật ngữ Hue, Saturation và Value theo đúng thứ tự bằng hình ảnh minh họa dưới đây:",imageCollectionCauHoi.Images[5],
+                    new List<string> { "A: 1-2-3", "B: 2-3-1", "C: 3-1-2", "D: Tất cả đều sai" },
+                    "C"),
+
+                new CauHoi("Dưới đây là mô hình gì:",imageCollectionCauHoi.Images[6],
+                    new List<string> { "A: RGB", "B: CMYK", "C: RYB", "D: Tất cả đều sai" },
+                    "B"),
+
+                new CauHoi("Trong SQL đây là câu lệnh giúp thực hiện tác vụ gì:",imageCollectionCauHoi.Images[7],
+                    new List<string> { "A: Thêm một bản ghi vào một bảng", "B: Xóa bản ghi trong một bảng",
+                                      "C: Chỉnh sửa bản ghi trong một bảng", "D: Tất cả đều sai" },
+                    "A"),
+
+                new CauHoi("Thẻ <a> </a> trong đoạn code trên dùng để làm gì:",imageCollectionCauHoi.Images[8],
+                    new List<string> { "A: Đặt tiêu đề cho trang",
+                                      "B: Chứa toàn bộ nội dung hiển thị của trang web, bao gồm văn bản, hình ảnh, video, liên kết",
+                                      "C: Tạo liên kết đến trang web example", "D: Tất cả đều sai" },
+                    "C"),
+
+                new CauHoi("Đoạn code phía dưới dùng để làm gì:",imageCollectionCauHoi.Images[9],
+                    new List<string> { "A: Kiểm tra số nhập vào là số chẵn hay lẻ",
+                                      "B: Kiểm tra số nhập vào có phải số nguyên hay không",
+                                      "C: Kiểm tra số nhập vào có phải số nguyên tố hay không", "D: Tất cả đều sai" },
+                    "A"),
+
+                new CauHoi("Hình ảnh minh họa dưới đây là bộ phận nào của máy tính:",imageCollectionCauHoi.Images[10],
+                    new List<string> { "A: Mainboard", "B: CPU", "C: Khe cắm Ram", "D: Tất cả đều sai" },
+                    "C"),
+
+                new CauHoi("Mô hình quản lý thư viện dưới đây thuộc loại mô hình nào:",imageCollectionCauHoi.Images[11],
+                    new List<string> { "A: Hoạt động", "B: Trạng thái", "C: Usecase", "D: Lớp" },
+                    "A"),
+
+                new CauHoi("Đây là mô hình gì:",imageCollectionCauHoi.Images[12],
+                    new List<string> { "A: Mô hình client-server", "B: Mô hình OSI", "C: Mô hình TCP/IP", "D: Tất cả đều sai" },
+                    "A"),
+
+                new CauHoi("Tầng thứ 2 trong mô hình OSI là gì:",imageCollectionCauHoi.Images[13],
+                    new List<string> { "A: Link", "B: Data-link", "C: Tất cả đều đúng", "D: Tất cả đều sai" },
+                    "B"),
+
+                new CauHoi("Lệnh SELECT dưới đây dùng để làm gì:",imageCollectionCauHoi.Images[14],
+                    new List<string> { "A: Chỉnh sửa dữ liệu từ 1 bảng", "B: In ra thông tin từ 1 bảng",
+                                      "C: Tạo 1 bảng mới", "D: Tất cả đều sai" },
+                "B"),
                 new CauHoi("Đây là cấu trúc mạng hình gì:",imageCollectionCauHoi.Images[0],
                     new List<string> { "A: Ring", "B: Bus", "C: Start", "D: Tất cả đều sai" },
                     "D"),
@@ -184,6 +315,10 @@ namespace Trac_Nghiem_HPC_UI
         {
             if (e.ElementId == "nopBaiButon")
             {
+                frmNocation frmNocation = new frmNocation();
+                frmNocation.ShowDialog();
+
+                /*
                 var arg = new XtraMessageBoxArgs();
                 arg.HtmlTemplate.Assign(htmlMesage);
                 arg.Caption = "Nộp bài thi";
@@ -194,6 +329,8 @@ namespace Trac_Nghiem_HPC_UI
                 {
                     this.Close();
                 }
+                */
+                this.Close();
             }
         }
 

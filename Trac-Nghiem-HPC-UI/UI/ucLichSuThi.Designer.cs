@@ -33,29 +33,31 @@
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.tileView1 = new DevExpress.XtraGrid.Views.Tile.TileView();
             this.imageCollectionfrmLichSuThi = new DevExpress.Utils.ImageCollection(this.components);
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
+            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tileView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollectionfrmLichSuThi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
+            this.panelControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // gridControl1
             // 
-            this.gridControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.gridControl1.Location = new System.Drawing.Point(3, 72);
+            this.gridControl1.Location = new System.Drawing.Point(3, 106);
             this.gridControl1.MainView = this.tileView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(945, 943);
-            this.gridControl1.TabIndex = 0;
+            this.gridControl1.Size = new System.Drawing.Size(933, 909);
+            this.gridControl1.TabIndex = 3;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.tileView1});
             this.gridControl1.Load += new System.EventHandler(this.gridControl1_Load);
             // 
             // tileView1
             // 
+            this.tileView1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.tileView1.GridControl = this.gridControl1;
             this.tileView1.HtmlImages = this.imageCollectionfrmLichSuThi;
             this.tileView1.Name = "tileView1";
@@ -81,33 +83,47 @@
             this.imageCollectionfrmLichSuThi.Images.SetKeyName(1, "information.png");
             this.imageCollectionfrmLichSuThi.Images.SetKeyName(2, "location.png");
             // 
-            // labelControl1
-            // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(77)))), ((int)(((byte)(162)))));
-            this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Appearance.Options.UseForeColor = true;
-            this.labelControl1.Location = new System.Drawing.Point(881, 19);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(13, 3, 3, 3);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(139, 37);
-            this.labelControl1.TabIndex = 1;
-            this.labelControl1.Text = "Lịch sử thi";
-            // 
             // chartControl1
             // 
-            this.chartControl1.Location = new System.Drawing.Point(954, 72);
+            this.chartControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.chartControl1.Location = new System.Drawing.Point(942, 106);
             this.chartControl1.Name = "chartControl1";
             this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
-            this.chartControl1.Size = new System.Drawing.Size(909, 943);
-            this.chartControl1.TabIndex = 2;
+            this.chartControl1.Size = new System.Drawing.Size(921, 909);
+            this.chartControl1.TabIndex = 3;
+            // 
+            // panelControl1
+            // 
+            this.panelControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelControl1.Controls.Add(this.labelControl1);
+            this.panelControl1.Location = new System.Drawing.Point(3, 3);
+            this.panelControl1.Name = "panelControl1";
+            this.panelControl1.Size = new System.Drawing.Size(1860, 97);
+            this.panelControl1.TabIndex = 3;
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Roboto", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(88)))), ((int)(((byte)(163)))));
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Appearance.Options.UseForeColor = true;
+            this.labelControl1.Location = new System.Drawing.Point(829, 22);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(4);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(208, 53);
+            this.labelControl1.TabIndex = 3;
+            this.labelControl1.Text = "Lịch sử thi";
             // 
             // ucLichSuThi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.panelControl1);
             this.Controls.Add(this.chartControl1);
-            this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.gridControl1);
             this.Name = "ucLichSuThi";
             this.Size = new System.Drawing.Size(1866, 1018);
@@ -116,8 +132,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.tileView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollectionfrmLichSuThi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
+            this.panelControl1.ResumeLayout(false);
+            this.panelControl1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -126,7 +144,8 @@
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Tile.TileView tileView1;
         private DevExpress.Utils.ImageCollection imageCollectionfrmLichSuThi;
-        private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraCharts.ChartControl chartControl1;
+        private DevExpress.XtraEditors.PanelControl panelControl1;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
     }
 }

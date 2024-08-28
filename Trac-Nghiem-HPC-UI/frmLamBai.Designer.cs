@@ -49,6 +49,8 @@
             this.htmlMesage = new DevExpress.Utils.Html.HtmlTemplate();
             this.htmlMesageError = new DevExpress.Utils.Html.HtmlTemplate();
             this.imageCollectionCauHoi = new DevExpress.Utils.ImageCollection(this.components);
+            this.htmlContentPopupNocations = new DevExpress.XtraEditors.HtmlContentPopup(this.components);
+            this.alertControlNocations = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
             this.directXFormContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.htmlContentControlChiTietCauHoi)).BeginInit();
             this.htmlContentControlChiTietCauHoi.SuspendLayout();
@@ -62,6 +64,7 @@
             this.htmlContentControlHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.stepProgressBarThoiGian)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollectionCauHoi)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.htmlContentPopupNocations)).BeginInit();
             this.SuspendLayout();
             // 
             // directXFormContainerControl1
@@ -109,6 +112,7 @@
             this.imageCollection1.Images.SetKeyName(3, "mo-hinh-mvc-trong-java-la-gi-04.jpg");
             this.imageCollection1.Images.SetKeyName(4, "anh-chan-dung-con-gai-toc-ngan_082837328.jpg");
             this.imageCollection1.Images.SetKeyName(5, "cancel_32x32.png");
+            this.imageCollection1.Images.SetKeyName(6, "logo.png");
             // 
             // htmlContentControl2
             // 
@@ -140,7 +144,7 @@
             this.tileView1.GridControl = this.gridControlDanhSachCauHoi;
             this.tileView1.Name = "tileView1";
             this.tileView1.OptionsBehavior.AllowSmoothScrolling = true;
-            this.tileView1.OptionsTiles.ColumnCount = 3;
+            this.tileView1.OptionsTiles.ColumnCount = 2;
             this.tileView1.OptionsTiles.GroupTextPadding = new System.Windows.Forms.Padding(12, 8, 12, 8);
             this.tileView1.OptionsTiles.IndentBetweenGroups = 0;
             this.tileView1.OptionsTiles.IndentBetweenItems = 0;
@@ -303,6 +307,18 @@
             this.imageCollectionCauHoi.Images.SetKeyName(13, "cau14.png");
             this.imageCollectionCauHoi.Images.SetKeyName(14, "cau15.png");
             // 
+            // htmlContentPopupNocations
+            // 
+            this.htmlContentPopupNocations.HtmlImages = this.imageCollection1;
+            this.htmlContentPopupNocations.HtmlTemplate.Styles = resources.GetString("htmlContentPopupNocations.HtmlTemplate.Styles");
+            this.htmlContentPopupNocations.HtmlTemplate.Template = resources.GetString("htmlContentPopupNocations.HtmlTemplate.Template");
+            // 
+            // alertControlNocations
+            // 
+            this.alertControlNocations.HtmlImages = this.imageCollection1;
+            this.alertControlNocations.HtmlTemplate.Styles = resources.GetString("alertControlNocations.HtmlTemplate.Styles");
+            this.alertControlNocations.HtmlTemplate.Template = resources.GetString("alertControlNocations.HtmlTemplate.Template");
+            // 
             // frmLamBai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -330,6 +346,7 @@
             this.htmlContentControlHeader.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.stepProgressBarThoiGian)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollectionCauHoi)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.htmlContentPopupNocations)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -355,5 +372,7 @@
         private DevExpress.Utils.Html.HtmlTemplate htmlMesage;
         private DevExpress.Utils.Html.HtmlTemplate htmlMesageError;
         private DevExpress.Utils.ImageCollection imageCollectionCauHoi;
+        private DevExpress.XtraEditors.HtmlContentPopup htmlContentPopupNocations;
+        private DevExpress.XtraBars.Alerter.AlertControl alertControlNocations;
     }
 }
