@@ -34,9 +34,11 @@
             this.tileView1 = new DevExpress.XtraGrid.Views.Tile.TileView();
             this.imageCollectionfrmLichSuThi = new DevExpress.Utils.ImageCollection(this.components);
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tileView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollectionfrmLichSuThi)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
             this.SuspendLayout();
             // 
             // gridControl1
@@ -46,7 +48,7 @@
             this.gridControl1.Location = new System.Drawing.Point(3, 72);
             this.gridControl1.MainView = this.tileView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1860, 943);
+            this.gridControl1.Size = new System.Drawing.Size(945, 943);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.tileView1});
@@ -81,23 +83,30 @@
             // 
             // labelControl1
             // 
-            this.labelControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(77)))), ((int)(((byte)(162)))));
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Appearance.Options.UseForeColor = true;
-            this.labelControl1.Location = new System.Drawing.Point(860, 16);
+            this.labelControl1.Location = new System.Drawing.Point(881, 19);
             this.labelControl1.Margin = new System.Windows.Forms.Padding(13, 3, 3, 3);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(139, 37);
             this.labelControl1.TabIndex = 1;
             this.labelControl1.Text = "Lịch sử thi";
             // 
+            // chartControl1
+            // 
+            this.chartControl1.Location = new System.Drawing.Point(954, 72);
+            this.chartControl1.Name = "chartControl1";
+            this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
+            this.chartControl1.Size = new System.Drawing.Size(909, 943);
+            this.chartControl1.TabIndex = 2;
+            // 
             // ucLichSuThi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.chartControl1);
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.gridControl1);
             this.Name = "ucLichSuThi";
@@ -106,6 +115,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tileView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollectionfrmLichSuThi)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -117,5 +127,6 @@
         private DevExpress.XtraGrid.Views.Tile.TileView tileView1;
         private DevExpress.Utils.ImageCollection imageCollectionfrmLichSuThi;
         private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraCharts.ChartControl chartControl1;
     }
 }

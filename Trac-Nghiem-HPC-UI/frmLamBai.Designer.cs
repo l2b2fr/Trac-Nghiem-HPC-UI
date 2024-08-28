@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLamBai));
             this.directXFormContainerControl1 = new DevExpress.XtraEditors.DirectXFormContainerControl();
-            this.htmlContentControl3 = new DevExpress.XtraEditors.HtmlContentControl();
+            this.htmlContentControlChiTietCauHoi = new DevExpress.XtraEditors.HtmlContentControl();
             this.radioGroupDapAn = new DevExpress.XtraEditors.RadioGroup();
             this.imageCollection1 = new DevExpress.Utils.ImageCollection(this.components);
             this.htmlContentControl2 = new DevExpress.XtraEditors.HtmlContentControl();
@@ -48,9 +48,10 @@
             this.htmlTemplateCollectionFrmLamBai = new DevExpress.Utils.Html.HtmlTemplateCollection();
             this.htmlMesage = new DevExpress.Utils.Html.HtmlTemplate();
             this.htmlMesageError = new DevExpress.Utils.Html.HtmlTemplate();
+            this.imageCollectionCauHoi = new DevExpress.Utils.ImageCollection(this.components);
             this.directXFormContainerControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.htmlContentControl3)).BeginInit();
-            this.htmlContentControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.htmlContentControlChiTietCauHoi)).BeginInit();
+            this.htmlContentControlChiTietCauHoi.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radioGroupDapAn.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.htmlContentControl2)).BeginInit();
@@ -60,12 +61,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.htmlContentControlHeader)).BeginInit();
             this.htmlContentControlHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.stepProgressBarThoiGian)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imageCollectionCauHoi)).BeginInit();
             this.SuspendLayout();
             // 
             // directXFormContainerControl1
             // 
             this.directXFormContainerControl1.BackColor = System.Drawing.Color.White;
-            this.directXFormContainerControl1.Controls.Add(this.htmlContentControl3);
+            this.directXFormContainerControl1.Controls.Add(this.htmlContentControlChiTietCauHoi);
             this.directXFormContainerControl1.Controls.Add(this.htmlContentControl2);
             this.directXFormContainerControl1.Controls.Add(this.htmlContentControlHeader);
             this.directXFormContainerControl1.Location = new System.Drawing.Point(0, 0);
@@ -73,31 +75,27 @@
             this.directXFormContainerControl1.Size = new System.Drawing.Size(1900, 1056);
             this.directXFormContainerControl1.TabIndex = 0;
             // 
-            // htmlContentControl3
+            // htmlContentControlChiTietCauHoi
             // 
-            this.htmlContentControl3.Controls.Add(this.radioGroupDapAn);
-            this.htmlContentControl3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.htmlContentControl3.HtmlImages = this.imageCollection1;
-            this.htmlContentControl3.HtmlTemplate.Styles = resources.GetString("htmlContentControl3.HtmlTemplate.Styles");
-            this.htmlContentControl3.HtmlTemplate.Template = resources.GetString("htmlContentControl3.HtmlTemplate.Template");
-            this.htmlContentControl3.Location = new System.Drawing.Point(0, 164);
-            this.htmlContentControl3.Margin = new System.Windows.Forms.Padding(20, 20, 0, 20);
-            this.htmlContentControl3.Name = "htmlContentControl3";
-            this.htmlContentControl3.Size = new System.Drawing.Size(1464, 899);
-            this.htmlContentControl3.TabIndex = 2;
+            this.htmlContentControlChiTietCauHoi.Controls.Add(this.radioGroupDapAn);
+            this.htmlContentControlChiTietCauHoi.Cursor = System.Windows.Forms.Cursors.Default;
+            this.htmlContentControlChiTietCauHoi.HtmlImages = this.imageCollection1;
+            this.htmlContentControlChiTietCauHoi.HtmlTemplate.Styles = resources.GetString("htmlContentControlChiTietCauHoi.HtmlTemplate.Styles");
+            this.htmlContentControlChiTietCauHoi.HtmlTemplate.Template = resources.GetString("htmlContentControlChiTietCauHoi.HtmlTemplate.Template");
+            this.htmlContentControlChiTietCauHoi.Location = new System.Drawing.Point(0, 164);
+            this.htmlContentControlChiTietCauHoi.Margin = new System.Windows.Forms.Padding(20, 20, 0, 20);
+            this.htmlContentControlChiTietCauHoi.Name = "htmlContentControlChiTietCauHoi";
+            this.htmlContentControlChiTietCauHoi.Size = new System.Drawing.Size(1464, 899);
+            this.htmlContentControlChiTietCauHoi.TabIndex = 2;
             // 
             // radioGroupDapAn
             // 
-            this.radioGroupDapAn.Location = new System.Drawing.Point(24, 462);
+            this.radioGroupDapAn.Location = new System.Drawing.Point(24, 627);
             this.radioGroupDapAn.Name = "radioGroupDapAn";
             this.radioGroupDapAn.Properties.Appearance.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioGroupDapAn.Properties.Appearance.Options.UseFont = true;
-            this.radioGroupDapAn.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "A. View"),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "B. Controller"),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "C. Model"),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "D. Router")});
-            this.radioGroupDapAn.Size = new System.Drawing.Size(1416, 414);
+            this.radioGroupDapAn.Properties.Padding = new System.Windows.Forms.Padding(30);
+            this.radioGroupDapAn.Size = new System.Drawing.Size(1416, 248);
             this.radioGroupDapAn.TabIndex = 0;
             // 
             // imageCollection1
@@ -154,8 +152,9 @@
             this.tileView1.OptionsTiles.RowCount = 0;
             this.tileView1.OptionsTiles.ScrollMode = DevExpress.XtraEditors.TileControlScrollMode.None;
             this.tileView1.TileHtmlTemplate.Styles = resources.GetString("tileView1.TileHtmlTemplate.Styles");
-            this.tileView1.TileHtmlTemplate.Template = "<div id=\"kiemTraButton\" class=\"button\" onclick=\"onDetailButtonClick\">\r\n\t$Câu: {_i" +
-    "d}\r\n</div>";
+            this.tileView1.TileHtmlTemplate.Template = "<div id=\"cauHoi\" class=\"button\" onclick=\"onDetailButtonClick\">\r\n\t$Câu: {Id}\r\n</di" +
+    "v>";
+            this.tileView1.HtmlElementMouseClick += new DevExpress.XtraGrid.Views.Tile.TileViewHtmlElementMouseEventHandler(this.tileView1_HtmlElementMouseClick);
             // 
             // htmlContentControlHeader
             // 
@@ -165,8 +164,8 @@
             this.htmlContentControlHeader.Controls.Add(this.stepProgressBarThoiGian);
             this.htmlContentControlHeader.Cursor = System.Windows.Forms.Cursors.Default;
             this.htmlContentControlHeader.HtmlImages = this.imageCollection1;
-            this.htmlContentControlHeader.HtmlTemplate.Styles = resources.GetString("htmlContentControl1.HtmlTemplate.Styles");
-            this.htmlContentControlHeader.HtmlTemplate.Template = resources.GetString("htmlContentControl1.HtmlTemplate.Template");
+            this.htmlContentControlHeader.HtmlTemplate.Styles = resources.GetString("htmlContentControlHeader.HtmlTemplate.Styles");
+            this.htmlContentControlHeader.HtmlTemplate.Template = resources.GetString("htmlContentControlHeader.HtmlTemplate.Template");
             this.htmlContentControlHeader.Location = new System.Drawing.Point(0, 0);
             this.htmlContentControlHeader.Margin = new System.Windows.Forms.Padding(20);
             this.htmlContentControlHeader.Name = "htmlContentControlHeader";
@@ -283,6 +282,27 @@
             this.htmlMesageError.Styles = resources.GetString("htmlMesageError.Styles");
             this.htmlMesageError.Template = resources.GetString("htmlMesageError.Template");
             // 
+            // imageCollectionCauHoi
+            // 
+            this.imageCollectionCauHoi.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageCollectionCauHoi.ImageStream = ((DevExpress.Utils.ImageCollectionStreamer)(resources.GetObject("imageCollectionCauHoi.ImageStream")));
+            this.imageCollectionCauHoi.IsDpiAware = DevExpress.Utils.DefaultBoolean.True;
+            this.imageCollectionCauHoi.Images.SetKeyName(0, "cau1.png");
+            this.imageCollectionCauHoi.Images.SetKeyName(1, "cau2.png");
+            this.imageCollectionCauHoi.Images.SetKeyName(2, "cau3.png");
+            this.imageCollectionCauHoi.Images.SetKeyName(3, "cau4.png");
+            this.imageCollectionCauHoi.Images.SetKeyName(4, "cau5.png");
+            this.imageCollectionCauHoi.Images.SetKeyName(5, "cau6.png");
+            this.imageCollectionCauHoi.Images.SetKeyName(6, "cau7.png");
+            this.imageCollectionCauHoi.Images.SetKeyName(7, "cau8.png");
+            this.imageCollectionCauHoi.Images.SetKeyName(8, "cau9.png");
+            this.imageCollectionCauHoi.Images.SetKeyName(9, "cau10.png");
+            this.imageCollectionCauHoi.Images.SetKeyName(10, "cau11.png");
+            this.imageCollectionCauHoi.Images.SetKeyName(11, "cau12.png");
+            this.imageCollectionCauHoi.Images.SetKeyName(12, "cau13.png");
+            this.imageCollectionCauHoi.Images.SetKeyName(13, "cau14.png");
+            this.imageCollectionCauHoi.Images.SetKeyName(14, "cau15.png");
+            // 
             // frmLamBai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -297,8 +317,8 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmLamBai_Load);
             this.directXFormContainerControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.htmlContentControl3)).EndInit();
-            this.htmlContentControl3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.htmlContentControlChiTietCauHoi)).EndInit();
+            this.htmlContentControlChiTietCauHoi.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.radioGroupDapAn.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.htmlContentControl2)).EndInit();
@@ -309,6 +329,7 @@
             this.htmlContentControlHeader.ResumeLayout(false);
             this.htmlContentControlHeader.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.stepProgressBarThoiGian)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imageCollectionCauHoi)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -317,7 +338,7 @@
 
         private DevExpress.XtraEditors.DirectXFormContainerControl directXFormContainerControl1;
         private DevExpress.XtraEditors.HtmlContentControl htmlContentControlHeader;
-        private DevExpress.XtraEditors.HtmlContentControl htmlContentControl3;
+        private DevExpress.XtraEditors.HtmlContentControl htmlContentControlChiTietCauHoi;
         private DevExpress.XtraEditors.HtmlContentControl htmlContentControl2;
         private DevExpress.Utils.ImageCollection imageCollection1;
         private DevExpress.XtraEditors.StepProgressBar stepProgressBarThoiGian;
@@ -333,5 +354,6 @@
         private DevExpress.Utils.Html.HtmlTemplateCollection htmlTemplateCollectionFrmLamBai;
         private DevExpress.Utils.Html.HtmlTemplate htmlMesage;
         private DevExpress.Utils.Html.HtmlTemplate htmlMesageError;
+        private DevExpress.Utils.ImageCollection imageCollectionCauHoi;
     }
 }
