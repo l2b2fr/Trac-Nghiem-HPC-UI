@@ -66,7 +66,7 @@
             this.Name = "frmNocation";
             this.Padding = new System.Windows.Forms.Padding(4);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmNocation";
+            this.Text = "p";
             this.HtmlElementMouseClick += new DevExpress.Utils.Html.DxHtmlElementMouseEventHandler(this.frmNocation_HtmlElementMouseClick);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmNocation_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).EndInit();

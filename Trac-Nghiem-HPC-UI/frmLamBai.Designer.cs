@@ -32,6 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLamBai));
             this.directXFormContainerControl1 = new DevExpress.XtraEditors.DirectXFormContainerControl();
             this.htmlContentControlChiTietCauHoi = new DevExpress.XtraEditors.HtmlContentControl();
+            this.zoomTrackBarControlAnhCauHoi = new DevExpress.XtraEditors.ZoomTrackBarControl();
+            this.pictureEditAnhCauHoi = new DevExpress.XtraEditors.PictureEdit();
             this.radioGroupDapAn = new DevExpress.XtraEditors.RadioGroup();
             this.imageCollection1 = new DevExpress.Utils.ImageCollection(this.components);
             this.htmlContentControl2 = new DevExpress.XtraEditors.HtmlContentControl();
@@ -54,6 +56,9 @@
             this.directXFormContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.htmlContentControlChiTietCauHoi)).BeginInit();
             this.htmlContentControlChiTietCauHoi.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomTrackBarControlAnhCauHoi)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomTrackBarControlAnhCauHoi.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEditAnhCauHoi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radioGroupDapAn.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.htmlContentControl2)).BeginInit();
@@ -80,6 +85,8 @@
             // 
             // htmlContentControlChiTietCauHoi
             // 
+            this.htmlContentControlChiTietCauHoi.Controls.Add(this.zoomTrackBarControlAnhCauHoi);
+            this.htmlContentControlChiTietCauHoi.Controls.Add(this.pictureEditAnhCauHoi);
             this.htmlContentControlChiTietCauHoi.Controls.Add(this.radioGroupDapAn);
             this.htmlContentControlChiTietCauHoi.Cursor = System.Windows.Forms.Cursors.Default;
             this.htmlContentControlChiTietCauHoi.HtmlImages = this.imageCollection1;
@@ -90,6 +97,28 @@
             this.htmlContentControlChiTietCauHoi.Name = "htmlContentControlChiTietCauHoi";
             this.htmlContentControlChiTietCauHoi.Size = new System.Drawing.Size(1464, 899);
             this.htmlContentControlChiTietCauHoi.TabIndex = 2;
+            // 
+            // zoomTrackBarControlAnhCauHoi
+            // 
+            this.zoomTrackBarControlAnhCauHoi.EditValue = 100;
+            this.zoomTrackBarControlAnhCauHoi.Location = new System.Drawing.Point(24, 592);
+            this.zoomTrackBarControlAnhCauHoi.Name = "zoomTrackBarControlAnhCauHoi";
+            this.zoomTrackBarControlAnhCauHoi.Properties.Maximum = 1000;
+            this.zoomTrackBarControlAnhCauHoi.Properties.Minimum = 1;
+            this.zoomTrackBarControlAnhCauHoi.Size = new System.Drawing.Size(425, 16);
+            this.zoomTrackBarControlAnhCauHoi.TabIndex = 2;
+            this.zoomTrackBarControlAnhCauHoi.Value = 100;
+            this.zoomTrackBarControlAnhCauHoi.EditValueChanged += new System.EventHandler(this.zoomTrackBarControlAnhCauHoi_EditValueChanged);
+            // 
+            // pictureEditAnhCauHoi
+            // 
+            this.pictureEditAnhCauHoi.Location = new System.Drawing.Point(24, 68);
+            this.pictureEditAnhCauHoi.Name = "pictureEditAnhCauHoi";
+            this.pictureEditAnhCauHoi.Properties.AllowScrollOnMouseWheel = DevExpress.Utils.DefaultBoolean.False;
+            this.pictureEditAnhCauHoi.Properties.AllowScrollViaMouseDrag = true;
+            this.pictureEditAnhCauHoi.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEditAnhCauHoi.Size = new System.Drawing.Size(1416, 524);
+            this.pictureEditAnhCauHoi.TabIndex = 1;
             // 
             // radioGroupDapAn
             // 
@@ -144,7 +173,7 @@
             this.tileView1.GridControl = this.gridControlDanhSachCauHoi;
             this.tileView1.Name = "tileView1";
             this.tileView1.OptionsBehavior.AllowSmoothScrolling = true;
-            this.tileView1.OptionsTiles.ColumnCount = 2;
+            this.tileView1.OptionsTiles.ColumnCount = 3;
             this.tileView1.OptionsTiles.GroupTextPadding = new System.Windows.Forms.Padding(12, 8, 12, 8);
             this.tileView1.OptionsTiles.IndentBetweenGroups = 0;
             this.tileView1.OptionsTiles.IndentBetweenItems = 0;
@@ -194,7 +223,7 @@
             this.stepProgressBarThoiGian.Appearance.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.stepProgressBarThoiGian.Appearance.Options.UseBackColor = true;
             this.stepProgressBarThoiGian.Appearance.Options.UseFont = true;
-            this.stepProgressBarThoiGian.Appearances.CommonActiveColor = System.Drawing.Color.DeepSkyBlue;
+            this.stepProgressBarThoiGian.Appearances.CommonActiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.stepProgressBarThoiGian.ConnectorLineThickness = 5;
             this.stepProgressBarThoiGian.ContentAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.stepProgressBarThoiGian.Cursor = System.Windows.Forms.Cursors.Default;
@@ -335,6 +364,10 @@
             this.directXFormContainerControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.htmlContentControlChiTietCauHoi)).EndInit();
             this.htmlContentControlChiTietCauHoi.ResumeLayout(false);
+            this.htmlContentControlChiTietCauHoi.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomTrackBarControlAnhCauHoi.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomTrackBarControlAnhCauHoi)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEditAnhCauHoi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radioGroupDapAn.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.htmlContentControl2)).EndInit();
@@ -374,5 +407,7 @@
         private DevExpress.Utils.ImageCollection imageCollectionCauHoi;
         private DevExpress.XtraEditors.HtmlContentPopup htmlContentPopupNocations;
         private DevExpress.XtraBars.Alerter.AlertControl alertControlNocations;
+        private DevExpress.XtraEditors.PictureEdit pictureEditAnhCauHoi;
+        private DevExpress.XtraEditors.ZoomTrackBarControl zoomTrackBarControlAnhCauHoi;
     }
 }

@@ -19,7 +19,7 @@ namespace Trac_Nghiem_HPC_UI
 {
     public partial class frmLamBai : DevExpress.XtraEditors.DirectXForm
     {
-        private int thoigian = 1 * 60; // 15 phút = 15 * 60 giây
+        private int thoigian = 45 * 60; // 15 phút = 15 * 60 giây
         private int demgiay = 1;
         private List<CauHoi> CauHois;
         public frmLamBai()
@@ -42,6 +42,7 @@ namespace Trac_Nghiem_HPC_UI
             list.Add(Program.sinhVienResponse);
             htmlContentControlHeader.DataContext = Program.sinhVienResponse;
         }
+
         private void loadCauHoi()
         {
             /*List<CauHoi> listCauHoi = new List<CauHoi>();
@@ -260,13 +261,14 @@ namespace Trac_Nghiem_HPC_UI
 
             gridControlDanhSachCauHoi.DataSource = CauHois;
             htmlContentControlChiTietCauHoi.DataContext = CauHois[0];
+            pictureEditAnhCauHoi.Image = CauHois[0].Photo;
 
             // Xóa các mục hiện tại trong radioGroupDapAn để tránh lỗi khi thêm mới
             radioGroupDapAn.Properties.Items.Clear();
 
             // Lấy danh sách các đáp án từ câu hỏi hiện tại
             List<string> listDapAn = CauHois[0].DapAn;
-
+            
             // Duyệt qua từng đáp án và thêm vào radioGroupDapAn
             for (int i = 0; i < listDapAn.Count; i++)
             {
@@ -315,10 +317,6 @@ namespace Trac_Nghiem_HPC_UI
         {
             if (e.ElementId == "nopBaiButon")
             {
-                frmNocation frmNocation = new frmNocation();
-                frmNocation.ShowDialog();
-
-                /*
                 var arg = new XtraMessageBoxArgs();
                 arg.HtmlTemplate.Assign(htmlMesage);
                 arg.Caption = "Nộp bài thi";
@@ -327,10 +325,10 @@ namespace Trac_Nghiem_HPC_UI
                 var result = XtraMessageBox.Show(arg);
                 if (result == DialogResult.Yes)
                 {
+                    frmNocation frmNocation = new frmNocation();
+                    frmNocation.ShowDialog();
                     this.Close();
                 }
-                */
-                this.Close();
             }
         }
 
@@ -367,6 +365,7 @@ namespace Trac_Nghiem_HPC_UI
                         List<CauHoi> cauHois = new List<CauHoi>();
                         cauHois.Add(dataList[selectedIndex]);
                         htmlContentControlChiTietCauHoi.DataContext = cauHois;
+                        pictureEditAnhCauHoi.Image = dataList[selectedIndex].Photo;
 
                         // Xóa các mục hiện tại trong radioGroupDapAn để tránh lỗi khi thêm mới
                         radioGroupDapAn.Properties.Items.Clear();
@@ -392,6 +391,11 @@ namespace Trac_Nghiem_HPC_UI
                     MessageBox.Show("Loại nguồn dữ liệu không được hỗ trợ.");
                 }
             }
+        }
+
+        private void zoomTrackBarControlAnhCauHoi_EditValueChanged(object sender, EventArgs e)
+        {
+            pictureEditAnhCauHoi.Properties.ZoomPercent = zoomTrackBarControlAnhCauHoi.Value;
         }
     }
 }
